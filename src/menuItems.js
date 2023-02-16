@@ -54,4 +54,8 @@ export const menuItems = [
     //   },
     // ],
   },
+  {
+    title: 'Member Login',
+    url: '/login',
+  }
 ];
