@@ -13,7 +13,8 @@ const divStyle = {
   alignItems: 'center',
   justifyContent: 'center',
   backgroundSize: 'cover',
-  height: '400px'
+  height: '500px',
+  width:"100%"
 }
 const slideImages = [
   {
@@ -33,11 +34,11 @@ const slideImages = [
 const Slideshow = () => {
     return (
       <div className="slide-container">
-        <Slide>
+        <Slide indicators={true}>
          {slideImages.map((slideImage, index)=> (
             <div key={index}>
               <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-                <span style={spanStyle}>{slideImage.caption}</span>
+               
               </div>
             </div>
           ))} 
