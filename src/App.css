@@ -306,10 +306,17 @@ button span {
 
 .col1,.col2{
   max-height: 1000;
-  max-width: 900px;
+  max-width: 900px; 
 
-  
-
+}
+.row_flex{
+  display :flex;
+  width: 100%;
+  max-height: 400px;
+  justify-content: center;
+}
+.col_2{
+width: 45%;
 }
 .welcome-title{
   height: 100px;
