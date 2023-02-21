@@ -295,3 +295,93 @@ button span {
 .react-slideshow-wrapper .images-wrap>div[aria-hidden='true'] {
   display: none;
 }
+
+.main-div{
+  max-height: 2000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.col1,.col2{
+  max-height: 1000;
+  max-width: 900px;
+
+  
+
+}
+.welcome-title{
+  height: 100px;
+  width: 400px;
+  padding-top: 70px;
+  padding-left: 10px;
+  font-size: 20px;
+  
+  
+
+}
+
+.purpose{
+  height: 100px;
+  width: 600px;
+  margin: 40px;
+  margin-left: 10px;
+  padding-left: 2px;
+}
+.purpose p{
+  height: 100px;
+  width: 600px;
+  margin-top: 30px;
+}
+
+.Feature
+{
+  height: 100px;
+  width: 600px;
+  margin: 70px;
+  margin-left: 10px;
+}
+
+.Feature p{
+  height: 100px;
+  width: 600px;
+  margin-top: 30px;
+}
+
+.TargetUser{
+  height: 30px;
+  width: 600px;
+  margin-left: 10px;
+}
+.list{
+  height: 10px;
+  width: 600px;
+  margin-top: 30px;
+  padding: 10px;
+
+}
+
+.list ul li{
+  margin-bottom: 8px;
+}
+
+.li {
+  display: list-item;
+  text-align: webkit-match-parent;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.aboutus-oandulist{
+  height: 100px;
+  width: 600px;
+
+}
+.col2 img{ 
+  height: 400px;
+  width: 500px;
+  padding-top: 70px;
+} 

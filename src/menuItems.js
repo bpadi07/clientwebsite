@@ -8,41 +8,45 @@ export const menuItems = [
     url: '/services',
     submenu: [
       {
-        title: 'web design',
-        url: 'web-design',
+        title: 'It Placement',
+        url: 'It-Placement',
       },
       {
-        title: 'web development',
-        url: 'web-dev',
-        submenu: [
-          {
-            title: 'Frontend',
-            url: 'frontend',
-          },
-          {
-            title: 'Backend',
-            submenu: [
-              {
-                title: 'NodeJS',
-                url: 'node',
-              },
-              {
-                title: 'PHP',
-                url: 'php',
-              },
-            ],
-          },
-        ],
+        title: 'IT CONSULTING',
+        url: '/IT-CONSULTING',
+        //submenu: [
+          //{
+            //title: 'Frontend',
+           // url: 'frontend',
+         // },
+         // {
+           // title: 'Backend',
+            //submenu: [
+              //{
+                //title: 'NodeJS',
+                //url: 'node',
+              //},
+             // {
+               // title: 'PHP',
+                //url: 'php',
+              //},
+            //],
+         // },
+        //],
       },
       {
-        title: 'SEO',
-        url: 'seo',
+        title: 'IT TRANING',
+        url: '/IT-TRANING',
       },
     ],
   },
   {
-    title: 'About',
-    url: '/about',
+    title: 'courses',
+    url: '/courses'
+  },
+  {
+    title: 'About Us',
+    url: '/aboutUs',
     // submenu: [
     //   {
     //     title: 'Who we are',
