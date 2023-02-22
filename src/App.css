@@ -295,20 +295,20 @@ button span {
 .react-slideshow-wrapper .images-wrap>div[aria-hidden='true'] {
   display: none;
 }
-
+/*aboutus*/
 .main-div{
-  max-height: 2000px;
+ /* max-height: 2000px;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
 }
 
-.col1,.col2{
+/*.col1,.col2{
   max-height: 1000;
   max-width: 900px; 
 
-}
+}*/
 .row_flex{
   display :flex;
   width: 100%;
@@ -324,9 +324,6 @@ width: 45%;
   padding-top: 70px;
   padding-left: 10px;
   font-size: 20px;
-  
-  
-
 }
 
 .purpose{
@@ -363,7 +360,7 @@ width: 45%;
 }
 .list{
   height: 10px;
-  width: 600px;
+ width: 600px;
   margin-top: 30px;
   padding: 10px;
 
@@ -387,8 +384,41 @@ ul {
   width: 600px;
 
 }
+
+.col1 img{
+  height: 400px;
+  width: 600px;
+  margin-top: 100px;
+  padding-top: 40px;
+  
+}
 .col2 img{ 
   height: 400px;
-  width: 500px;
+  width: 550px;
   padding-top: 70px;
+  padding-right: 20px;
 } 
+
+.aboutus-skill{
+  margin:50px;
+
+}
+
+.aboutusskill-title{
+  margin: 10px;
+  border: 2px solid black;
+
+
+}
+
+.aboutusskill-title h4{
+  
+  text-transform: uppercase;
+  margin: 20PX;
+ 
+}
+
+.aboutusskill-title ul{
+  width: 450;
+  margin: 30px;
+}

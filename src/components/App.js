@@ -11,7 +11,7 @@ import Node from '../routes/Node';
 import AboutWho from '../routes/AboutWho';
 import OurValues from '../routes/OurValues';
 import WebDev from '../routes/WebDev';
-import Login from '../routes/Login';
+//import Login from '../routes/Login';
 import AboutUs from '../routes/AboutUs';
 
 const App = () => {
@@ -30,7 +30,7 @@ const App = () => {
           <Route path="php" element={<PHP />} />
           <Route path="who-we-are" element={<AboutWho />} />
           <Route path="our-values" element={<OurValues />} />
-          <Route path="login" element={<Login />} />
+          
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="*" element={<p>Not found!</p>} />
         </Route>

@@ -46,14 +46,42 @@ const AboutUs = () => {
                 </li>
              </ul>
              </div>
+            <div className="col1-img">
+              <img height="300" width="400" src="https://codenovas.com/wp-content/uploads/2018/05/course_image-2-1024x682.jpg" alt="computer lmg"/>
+            </div>
+             
                
 
 
     </div>
     <div  className="col2">
        <img  width="500" height="500"src="https://codenovas.com/wp-content/uploads/2018/07/cat_2-1-1024x684.jpg" alt="painting"/>
-    </div>
+    
+     <div className="aboutus-skill">
+      <h3>Skill</h3>
+      </div>
+      <div className="aboutusskill-title">
+      <h4 >Professional Certificate Courses (Online)</h4>
+    
+      
+        <ul>
+             <li>
+              <span style-prop-object="fond-weight=400" margin="10px">Online certificates can be obtained in a range of specialized areas.</span>
+             </li>
+             <li>
+              <span style-prop-object="fond-weight=400" margin="10px">Online associate degrees usually take approximately two years then</span>  
+             </li>
+             <li>
+              <span style-prop-object="fond-weight=400" margin="10px">Online preparatory year programs are an opportunity for students..</span>
+             </li>
+             <li>
+                  <span style-prop-object="fond-weight=400" margin="10px">Online Summer courses are a great way to gain qualifications.</span>   
+             </li>        
+        </ul>
+      </div>
+  </div>   
   </div>
+  
 </>
   );
   
