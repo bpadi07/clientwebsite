@@ -379,9 +379,11 @@ ul {
   list-style-type: disc;
 }
 
-.aboutus-oandulist{
-  height: 100px;
-  width: 600px;
+.aboutus-oulist {
+  height: 50px;
+  width: 300px;
+  margin-top: 100px;
+  padding-top: 40px;
 
 }
 
@@ -421,4 +423,95 @@ ul {
 .aboutusskill-title ul{
   width: 450;
   margin: 30px;
+}
+
+.aboutus-certification{
+  height: 100px;
+  width: 200px;
+  padding:40px;
+  font-size: 25px;
+
+}
+.main-div2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.col3 h4,.col4 h4,.col5 h4
+{
+   text-align: center;
+   padding-top: 20px;
+}
+
+.col3 img,.col4 img,.col5 img
+{
+   margin-top: 30px;   
+    border: 10px solid black;
+}
+
+.main-div3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  
+}
+
+.col6, .col7
+{
+  height: 30px;
+  width: 80px;
+}
+
+.fsubmit{
+  border-style:hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(21, 88, 214);
+  margin-top: 60px;
+  margin-left: 20px;
+  height: 30px;
+  width: 80px;
+}
+
+.fbutton{
+  color: rgb(229, 231, 236);
+}
+
+.tsubmit{
+  border-style:hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(232, 235, 241);
+  border-top: rgb(16, 94, 94);
+  border-top: 5px solid aqua;
+  margin-top: 55px;
+  margin-left: 40px;
+  height: 40px;
+  width: 90px;
+}
+
+.fa-twitter{
+  color:rgb(0, 247, 255);
+  font-size: 25px;
+}
+
+.main-div4{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 110px;
+  background-color: aquamarine;
+
+}
+
+.col8 h4{
+  margin-top: 100;
+}
+
+.col8 p{
+  width:400px;
+  height: 100px;
+  margin-top: 30px;
 }
