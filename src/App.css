@@ -225,8 +225,8 @@ button span {
 .react-slideshow-container+ul.indicators li {
   display: inline-block;
   position: relative;
-  width: 7px;
-  height: 7px;
+  width: 30px;
+  height: 30px;
   padding: 5px;
   margin: 0;
 }
@@ -243,11 +243,11 @@ button span {
   position: absolute;
   top: 0;
   left: 0;
-  width: 7px;
-  height: 7px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   content: '';
-  background: #000;
+  background: rgb(36, 34, 34);
   text-align: center;
 }
 
@@ -309,15 +309,52 @@ button span {
   max-width: 900px; 
 
 }*/
+/* Maruti D */
 .row_flex{
   display :flex;
-  width: 100%;
+  width: 90%;
   max-height: 400px;
   justify-content: center;
+  margin: auto;
+  margin-top:20px;
+  gap: 20px;
 }
 .col_2{
 width: 45%;
 }
+.home_slider{
+ 
+  color: white;
+}
+.home_slider_captions{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 8%;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  background: rgba(0,0,0,0.3);
+}
+.home_slider_captions > p{
+  font-size: 17px;
+}
+.home_slider_captions > p:first-child{
+  font-size: 34px;
+}
+.footer_area{
+  display: flex;
+  align-items: center;
+  width: -webkit-fill-available;
+  height: 70px;
+  background-color: #3e4753;
+  margin-top: 40px;
+  color: white;
+  /* position: absolute;
+  bottom: 0; */
+}
+
+/* Maruti D */
 .welcome-title{
   height: 100px;
   width: 400px;
