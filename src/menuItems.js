@@ -9,11 +9,11 @@ export const menuItems = [
     submenu: [
       {
         title: 'It Placement',
-        url: 'It-Placement',
+        url: '/IT-Placement',
       },
       {
-        title: 'IT CONSULTING',
-        url: '/IT-CONSULTING',
+        title: 'It Consulting',
+        url: '/IT-Consulting',
         //submenu: [
           //{
             //title: 'Frontend',
@@ -35,9 +35,9 @@ export const menuItems = [
         //],
       },
       {
-        title: 'IT TRANING',
-        url: '/IT-TRANING',
-      },
+        title: 'It training',
+        url: '/IT-training',
+      }
     ],
   },
   {

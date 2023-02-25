@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../routes/Home';
-import About from '../routes/About';
 import WebDesign from '../routes/WebDesign';
 import SEO from '../routes/SEO';
 import Services from '../routes/Services';
@@ -14,6 +13,10 @@ import WebDev from '../routes/WebDev';
 import Login from '../routes/Login';
 import AboutUs from '../routes/AboutUs';
 import Footer from '../components/footer';
+import Courses from '../routes/Courses';
+import ItConsulting from '../routes/ItConsulting';
+import ItPlacement from '../routes/ItPlacement';
+import Ittraning from '../routes/Ittraning';
 
 const App = () => {
   return (
@@ -21,8 +24,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="services" element={<Services />} />
+         <Route path="services" element={<Services />} />
           <Route path="web-design" element={<WebDesign />} />
           <Route path="web-dev" element={<WebDev />} />
           <Route path="frontend" element={<Frontend />} />
@@ -33,6 +35,10 @@ const App = () => {
           <Route path="our-values" element={<OurValues />} />
           <Route path="login" element={<Login />} />          
           <Route path="aboutus" element={<AboutUs />} />
+          <Route path="Courses" element={<Courses />} />
+          <Route path="IT-Consulting" element={<ItConsulting />} />
+          <Route path="IT-Placement" element={<ItPlacement />} />
+          <Route path="IT-training" element={<Ittraning/>}/>
           <Route path="*" element={<p>Not found!</p>} />
         </Route>
       </Routes>
