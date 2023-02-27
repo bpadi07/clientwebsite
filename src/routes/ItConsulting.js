@@ -1,5 +1,13 @@
 const ItConsulting = () => {
-    return <h2>Itconsulting</h2>;
+    return (
+    <>
+    <div  className="consulting-main1"> 
+           <h2  className="consulting-title">IT CONSULTING</h2>
+
+    </div>
+    
+    </>
+    )
   };
   
   export default ItConsulting;

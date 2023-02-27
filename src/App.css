@@ -553,7 +553,9 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color:darkgray;
+  background-color:rgb(104, 102, 102);
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
 
 }
 
@@ -569,48 +571,118 @@ ul {
 
 .placement-courses-main3
 {
-  height:420px;
-  width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  
+}
+
+.placement-col1{
+  width: 600px;
+  margin-top: 70px;
+  margin-left: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+
+  
+}
+
+.palcement-content1{
+  font-size: 35px;
+  margin-right: 70px;
+  margin-left: 20PX;
+  
+}
+
+.placement-col2{
+  width: 600px;
+  font-size: 20px;
+  margin-top: 20px; 
+  padding-left: 20px;
+}
+
+.placement-content2 pr,.placement-content3 pr,.placement-content4 pr{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.placement-content2 p,.placement-content3 p,.placement-content4 p{
+  font-size:  20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  padding: 10px;
+  margin-right:30px ;
+  
+}
+
+.training-main1{
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color:rgb(104, 102, 102);
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.training-title{
+  margin-top: 60px;
+  color: #f2f2f2;
+}
+.training-main2{
+  height: 50PX;
+  background-color: rgb(247, 240, 240);
+}
+
+.training-main3
+{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.training-col1{
+  width: 500px;
+  margin-top: 30px;
+  margin-left: 20px;
+  
+}
+.training-content1{
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-.palcement-content1{
-  height: 100px;
-  width: 400px;
+.training-content1, .training-content2,.training-content3{
+  padding: 20px;
+  margin-right: -70px;
+}
+
+.training-content2 pr,.training-content3 pr{
   font-size: 30px;
-  margin-left: 50px;
-  padding: 40px;
-  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.placement-content2,.placement-content3,.placement-content4{
-  height: 200px;
-  width: 800px;
-  
-  
-
-  
-}
-.placement-content2{
-  margin-top: -20px;
-  margin-left: 25px;
+.training-content2 p,.training-content3 p{
   font-size: 20px;
-  padding: 80px;
-
-  
 }
-.placement-content3{
 
-  margin-left: 550px;
-  font-size: 20px;
-  padding: 30px;
-
-
+.training-col2{
+  width: 600px;
 }
-.placement-content4{
-  font-size: 20px;
-  margin-left: 580px;
-  margin-top: -50px;
+
+.consulting-main1{
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color:rgb(104, 102, 102);
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
 }
+.consulting-title
+{
+  margin-top: 60px;
+  color: #f2f2f2;
+}
+
+
