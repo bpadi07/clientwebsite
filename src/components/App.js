@@ -12,11 +12,11 @@ import OurValues from '../routes/OurValues';
 import WebDev from '../routes/WebDev';
 import Login from '../routes/Login';
 import AboutUs from '../routes/AboutUs';
-import Footer from '../components/footer';
 import Courses from '../routes/Courses';
 import ItConsulting from '../routes/ItConsulting';
 import ItPlacement from '../routes/ItPlacement';
 import Ittraning from '../routes/Ittraning';
+import CourseDetails from '../routes/CourseDetails';
 
 const App = () => {
   return (
@@ -39,10 +39,11 @@ const App = () => {
           <Route path="IT-Consulting" element={<ItConsulting />} />
           <Route path="IT-Placement" element={<ItPlacement />} />
           <Route path="IT-training" element={<Ittraning/>}/>
+          <Route path="courses/*" element={<CourseDetails/>}/>
           <Route path="*" element={<p>Not found!</p>} />
         </Route>
       </Routes>
-      <Footer />
+      
     </>
   );
 };
