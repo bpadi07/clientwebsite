@@ -1,6 +1,8 @@
+import TabMenu from "../components/tabmenu";
+
 const CourseDetails = () => {
     return (
-     <h1>Course Detail</h1>
+        <TabMenu />
     );
   };
   
