@@ -420,15 +420,67 @@ width: 80%;
   font-size: 14px;
   font-weight: 600;
 }
+.course-deatails-container{
+  display: flex;
+  width: 90%;
+  margin: 4.5rem 4.5rem;
+}
+.course-deatails-col1{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.course-deatails-col2{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.enroll-btn{
+  text-decoration: none;
+  background-color: #5cbc87;
+  width: 70%;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
+.course-deatails-col2 > a{
+  color: white;
+}
+.course-info{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+   rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    padding-left: 5px;
+}
+.course-tag-elements{
+  display: inline-block;
+  margin-right: 50px;
+}
+.course-tag-elements > p{
+  font-size: 13px;
+  color: #aaa;
+}
+.course-tag-elements > h4{
+  color: #555;
+  font-size: 15px;
+}
 .Tabs {
-  width: 65%;
+  width: 90%;
   height: auto;
   min-height: 400px;
   background: #11434e;
-  margin: 1.5rem 6.5rem;
+  
   padding: 1rem 1rem;
   color: #E8F0F2;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   @media (max-width: 769px) {
    padding: 2rem 0;
   }
@@ -476,11 +528,31 @@ ul.nav li:hover {
 ul.nav li.active {
   background: #39A2DB;
 }
-.FirstTab p,
-.SecondTab p,
-.ThirdTab p {
-  font-size: 2rem;
-  text-align: center;
+
+.course-desc-tab{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.course-main-features{
+display: flex;
+width: 90%;
+align-self: center;
+gap: 6%;
+}
+.course-features{
+  width: 50%;
+}
+.course-features > ul{
+line-height: 2rem;
+font-size: 14px;;
+}
+
+.course-desc-tab p,
+.course-curriculam-tab p,
+.course-review-tab p {
+  font-size: 14px;
+  line-height: 2rem;
 }
 
 
