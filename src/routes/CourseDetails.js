@@ -1,7 +1,47 @@
+import { Link } from 'react-router-dom';
+import TabMenu from "../components/tabmenu";
+import PopularCourses from '../components/PopularCourses';
+
 const CourseDetails = () => {
     return (
-     <h1>Course Detail</h1>
+        <div className="course-deatails-container">
+            <div className="course-deatails-col1">
+                <h1>SharePoint (PowerApps)</h1>
+                <div className="course-tags">
+                    <div className="course-tag-elements">
+                        <p>Teacher</p>
+                        <h4>CODENOVASADMIN</h4>
+                    </div>
+                    <div className="course-tag-elements">
+                        <p>Category:</p>
+                        <h4>MICROSOFT, SHAREPOINT</h4>
+                    </div>
+                </div>
+                <TabMenu />
+            </div>
+            <div className="course-deatails-col2">
+                <div className="add-to-wishlist">
+                    <Link to="/" >
+                        <p><i className="fa fa-heart-o"></i>Add to Wishlist</p>
+                    </Link>
+                </div>
+                <Link to="/" className="enroll-btn">
+                    <b>ENROLL COURSE</b>
+                </Link>
+                <div>
+                    <div className='course-info'>
+                        <p>Enrolled: 1 Student</p>
+                    </div>
+                    <div className='course-info'>
+                        <p>Lectures: 0</p>
+                    </div>
+                </div>
+
+                <PopularCourses />
+
+            </div>
+        </div>
     );
-  };
-  
-  export default CourseDetails;
+};
+
+export default CourseDetails;
