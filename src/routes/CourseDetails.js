@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import TabMenu from "../components/tabmenu";
+import PopularCourses from '../components/PopularCourses';
 
 const CourseDetails = () => {
     return (
@@ -19,21 +20,25 @@ const CourseDetails = () => {
                 <TabMenu />
             </div>
             <div className="course-deatails-col2">
-                <div>
-                    <p>Add to Wishlist</p>
+                <div className="add-to-wishlist">
+                    <Link to="/" >
+                        <p><i className="fa fa-heart-o"></i>Add to Wishlist</p>
+                    </Link>
                 </div>
                 <Link to="/" className="enroll-btn">
                     <b>ENROLL COURSE</b>
                 </Link>
                 <div>
-                <div className='course-info'>
-                    <p>Enrolled: 1 Student</p>
+                    <div className='course-info'>
+                        <p>Enrolled: 1 Student</p>
+                    </div>
+                    <div className='course-info'>
+                        <p>Lectures: 0</p>
+                    </div>
                 </div>
-                <div className='course-info'>
-                    <p>Lectures: 0</p>
-                </div>
-                </div>
-               
+
+                <PopularCourses />
+
             </div>
         </div>
     );
