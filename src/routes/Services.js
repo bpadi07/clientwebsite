@@ -7,6 +7,7 @@ const Services = () => {
 
       <Link to="/web-design">Web design</Link>
       <Link to="/seo">Seo</Link>
+      <Link to="/courses">courses</Link>
     </>
   );
 };

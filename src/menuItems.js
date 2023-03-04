@@ -42,7 +42,7 @@ export const menuItems = [
   },
   {
     title: 'courses',
-    url: '/courses'
+    url: '/courses',
   },
   {
     title: 'About Us',

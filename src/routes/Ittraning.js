@@ -5,12 +5,6 @@ const Ittraning = () => {
 
         <h3 className="training-title">IT TRAINING</h3> 
   </div> 
-  <div  className="training-main2">
-        <a href="https://codenovas.com/">
-          <span>CODENOVAS</span>
-        </a>
-        <span>IT PLACEMENT</span>
-      </div>
   
 <div className="training-main3">
     <div className="training-col1">

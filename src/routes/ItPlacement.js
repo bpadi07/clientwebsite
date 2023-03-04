@@ -4,12 +4,8 @@ const ItPlacement = () => {
       <div className="placement-courses-main1">
       <h3 className='it-title'>IT PLACEMENT</h3>
       </div>
-      <div  className="placement-courses-main2">
-        <a href="https://codenovas.com/">
-          <span>CODENOVAS</span>
-        </a>
-        <span>IT PLACEMENT</span>
-      </div>
+      
+      
       <div className="placement-courses-main3">
         <div className="placement-col1"> 
            <div className="palcement-content1">
@@ -26,7 +22,8 @@ const ItPlacement = () => {
            </div><br></br>
            <div className="placement-content3">
                   <i class="fa fa-star"></i>
-                  <pr><b>   IT Placement </b></pr><br></br>
+                  <pr><b>   IT Placement </b></pr>
+                  
                   <p>Our experienced staffing teams deliver dream-team outcomes, without the hassles of hiring.</p>
            </div><br></br>
            

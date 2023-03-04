@@ -16,7 +16,26 @@ const Home = () => {
     <div className="col_2">
       <img height="100%" width="100%" src="http://hahuinc.com/assets/img/new/consulting.jpg" alt="consulting img"/>
     </div>
+    </div> 
+    
+    <div className="row_flex3">
+    <div className="col_3">
+      <p>Expert choice IT Placement services in one place.Choose from given free and paid Information Technology courses, learn and certify yourself with Specialization Certificate programs.Our experienced staffing teams deliver dream-team outcomes, without the hassles of hiring.We will help you engage the next level of the tech industry looking for with the help of our talented engineering teams.</p>
+    </div>
+    <div className="col_3">
+      <img height="100%" width="100%" src="https://vignan.ac.in/blog/images/march/placement1.png" alt="palcement img"/>
+    </div> 
+    </div>
 
+    <div className="row_flex4">
+      <div className="col_4">
+        <p>Learn and build your skills with IT Profession.Online IT programs.Our flexible, online programs fits with your need. Providing skills that are Essential to every IT professional.
+          Free Courses .There are many variations of free online courses. Pre-Paid courses with projects</p>
+      </div>
+      <div  className="col_4">
+           <img height="100%" width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHXgpymnv5oontyLUNQPvYAjt9wv1f1WrEQXe8FY4coMcH1Dt_xKnSinoJv22QvY6Asf0&usqp=CAU
+           " alt="training img"/>
+      </div>
     </div>
 {/* <Footer /> */}
     </>

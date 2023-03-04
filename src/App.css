@@ -315,18 +315,46 @@ button span {
 
 }*/
 /* Maruti D */
-.row_flex{
+.row_flex, .row_flex3, .row_flex4
+{
   display :flex;
   width: 90%;
   max-height: 400px;
-  justify-content: center;
+  justify-content:space-around;
   margin: auto;
   margin-top:20px;
   gap: 20px;
+  flex-wrap: wrap;
+  
 }
-.col_2{
-width: 45%;
+
+.col_2,.col_3,.col_4{
+  width: 45%;
+ } 
+
+/*.row-flex3{
+  display :flex;
+  width: 90%;
+  max-height: 400px;
+  justify-content:space-around;
+  margin: auto;
+  margin-top:20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  
 }
+
+.row-flex4{
+  display :flex;
+  width: 90%;
+  max-height: 400px;
+  justify-content:space-around;
+  margin: auto;
+  margin-top:20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}*/
+
 .home_slider{
  
   color: white;
@@ -422,6 +450,14 @@ width: 80%;
 }
 
 /* Maruti D */
+.main-div{
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap:10px;
+
+}
 .welcome-title{
   height: 100px;
   width: 400px;
@@ -613,7 +649,7 @@ ul {
   font-weight: lighter;;
 }
 
-/*courses*/
+/*servicess*/
 
 .placement-courses-main1{
   height: 150px;
@@ -631,42 +667,38 @@ ul {
   color: #f2f2f2;
 }
 
-.placement-courses-main2{
-  height: 50PX;
-  background-color: rgb(247, 240, 240);
-}
-
 .placement-courses-main3
 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:center;
+  align-items:center;
+  margin-top: 20px;
+  background-color: #fcebeb;
+  height: 400px;
   
   
 }
 
 .placement-col1{
   width: 600px;
-  margin-top: 70px;
-  margin-left: 30px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- 
-
-  
+  /*margin-top: 70px;*/
+  /*margin-left: 30px;*/
 }
 
 .palcement-content1{
-  font-size: 35px;
-  margin-right: 70px;
-  margin-left: 20PX;
+  font-size: 33px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /*margin-right: 70px;
+  margin-left: 20PX;*/
   
 }
 
 .placement-col2{
   width: 600px;
-  font-size: 20px;
-  margin-top: 20px; 
-  padding-left: 20px;
+ /* font-size: 20px;*/
+ /* margin-top: 20px; 
+  padding-left: 20px;*/
 }
 
 .placement-content2 pr,.placement-content3 pr,.placement-content4 pr{
@@ -676,10 +708,11 @@ ul {
 
 .placement-content2 p,.placement-content3 p,.placement-content4 p{
   font-size:  20px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:sans-serif;
   font-weight: lighter;
-  padding: 10px;
-  margin-right:30px ;
+ /* padding: 10px;
+  margin-right:30px ;*/
+  color: #666;
   
 }
 
@@ -694,24 +727,21 @@ ul {
 }
 
 .training-title{
-  margin-top: 60px;
+  margin-top: 50px;
   color: #f2f2f2;
-}
-.training-main2{
-  height: 50PX;
-  background-color: rgb(247, 240, 240);
 }
 
 .training-main3
 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:center;
+  margin-top: 30px; 
 }
 .training-col1{
   width: 500px;
-  margin-top: 30px;
-  margin-left: 20px;
+ /* margin-top: 30px;
+  margin-left: 20px;*/
   
 }
 .training-content1{
@@ -721,7 +751,7 @@ ul {
 
 .training-content1, .training-content2,.training-content3{
   padding: 20px;
-  margin-right: -70px;
+  /*margin-right: -70px;*/
 }
 
 .training-content2 pr,.training-content3 pr{
@@ -731,6 +761,7 @@ ul {
 
 .training-content2 p,.training-content3 p{
   font-size: 20px;
+  color: #666;
 }
 
 .training-col2{
