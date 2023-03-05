@@ -1,5 +1,5 @@
 
-import Google from "../img/google.png";
+import Google from "../img/btn_google_img.png";
 import Facebook from "../img/facebook.png";
 import Github from "../img/github.png";
 
@@ -23,7 +23,7 @@ const Login = () => {
         <div className="login-left">
           <div className="loginButton google-login-btn" onClick={google}>
             <img src={Google} alt="" className="icon" />
-            Google
+           
           </div>
           <div className="loginButton facebook-login-btn" onClick={facebook}>
             <img src={Facebook} alt="" className="icon" />

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import TabMenu from "../components/tabmenu";
 import PopularCourses from '../components/PopularCourses';
+import CourseProperties from '../components/CourseProperties';
 
 const CourseDetails = () => {
     return (
@@ -28,14 +29,7 @@ const CourseDetails = () => {
                 <Link to="/" className="enroll-btn">
                     <b>ENROLL COURSE</b>
                 </Link>
-                <div>
-                    <div className='course-info'>
-                        <p>Enrolled: 1 Student</p>
-                    </div>
-                    <div className='course-info'>
-                        <p>Lectures: 0</p>
-                    </div>
-                </div>
+               <CourseProperties />
 
                 <PopularCourses />
 
@@ -45,7 +39,22 @@ const CourseDetails = () => {
                     <p>Monday</p> <p>9:30 am - 6.00 pm</p>
                 </div>
                 <div className="working-hours">
-                    <p>Monday</p> <p>9:30 am - 6.00 pm</p>
+                    <p>Tuesday</p> <p>9:30 am - 6.00 pm</p>
+                </div>
+                <div className="working-hours">
+                    <p>Wednesday</p> <p>9:30 am - 6.00 pm</p>
+                </div>
+                <div className="working-hours">
+                    <p>Thursday</p> <p>9:30 am - 6.00 pm</p>
+                </div>
+                <div className="working-hours">
+                    <p>Friday</p> <p>9:30 am - 6.00 pm</p>
+                </div>
+                <div className="working-hours">
+                    <p>Saturday</p> <p>9:30 am - 6.00 pm</p>
+                </div>
+                <div className="working-hours">
+                    <p>Sunday</p> <p>9:30 am - 6.00 pm</p>
                 </div>
             </div>
 

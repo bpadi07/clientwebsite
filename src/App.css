@@ -396,6 +396,7 @@ button span {
 .courseHeader{
   width: 90%;
   height: 90px;
+  margin-left: 4%;
 }
 .courseContent{
   width: 90%;
@@ -559,6 +560,7 @@ color: rgba(0, 0, 0, 0.5);;
 }
 .working-hours{
   width: 100%;
+  line-height: 2rem;
 }
 .working-hours > p:first-child{
   float: left;
@@ -569,6 +571,9 @@ color: rgba(0, 0, 0, 0.5);;
 .working-day-hours{
   display: flex;
   flex-direction: column;
+}
+.working-day-hours > :first-child{
+  margin-bottom: 25px;
 }
 .Tabs {
   width: 90%;
@@ -713,7 +718,7 @@ font-size: 14px;;
 
 .loginButton{
   width: 70%;
-  padding: 15px 25px;
+  padding: 15px 15px;
   border-radius: 5px;
   color: white;
   display: flex;
@@ -724,7 +729,13 @@ font-size: 14px;;
 }
 
 .google-login-btn{
-  background-color: #df4930;
+  padding: 0;
+}
+
+.google-login-btn > img{
+  /* background-color: #df4930; */
+  width: 100%;
+  height: 100%;
 }
 .facebook-login-btn{
   background-color: #507cc0;
@@ -732,6 +743,11 @@ font-size: 14px;;
 }
 .github-login-btn{
   background-color: black;
+}
+
+.github-login-btn > img{
+width: 25px;
+height: 25px;
 }
 
 .icon{

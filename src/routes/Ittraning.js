@@ -26,7 +26,7 @@ const Ittraning = () => {
     </div>
     <div className="training-col2">
                 
-                  <img className="training-img" height="600px" width="600px" src="https://codenovas.com/wp-content/uploads/2022/05/training.jpg" alt-text="training-img"></img>
+                  <img className="training-img" height="600px" width="600px" src="https://codenovas.com/wp-content/uploads/2022/05/training.jpg" alt="training-img"></img>
     </div>       
 </div>
 
