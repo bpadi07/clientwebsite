@@ -39,6 +39,16 @@ const CourseDetails = () => {
 
                 <PopularCourses />
 
+                <div className="working-day-hours">
+                <h3>Working hours</h3>
+                <div className="working-hours">
+                    <p>Monday</p> <p>9:30 am - 6.00 pm</p>
+                </div>
+                <div className="working-hours">
+                    <p>Monday</p> <p>9:30 am - 6.00 pm</p>
+                </div>
+            </div>
+
             </div>
         </div>
     );

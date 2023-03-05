@@ -520,6 +520,56 @@ color: rgba(0, 0, 0, 0.5);;
   color: #555;
   font-size: 15px;
 }
+.popular-courses-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pop-courses{
+  display: flex;
+  margin-top: 30px;
+}
+.pop-courses-thumbnail{
+  margin-right: 20px;
+}
+.pop-courses-thumbnail{
+  height: 100%;
+}
+.pop-courses-decription{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pop-courses-decription > p:nth-child(1){
+  font-weight: 600;
+}
+
+.pop-courses-decription > p:nth-child(2){
+  font-size: 12px;
+  background-color: #385bce;
+  width: 50px;
+  color: white;
+  padding: 3px;
+  border-radius: 10%;
+  text-align: center;
+}
+.pop-courses-decription > p:last-child{
+  color: #aaa;
+  font-size: 12px;
+}
+.working-hours{
+  width: 100%;
+}
+.working-hours > p:first-child{
+  float: left;
+}
+.working-hours > p:last-child{
+  float: right;
+}
+.working-day-hours{
+  display: flex;
+  flex-direction: column;
+}
 .Tabs {
   width: 90%;
   height: auto;
@@ -704,6 +754,7 @@ font-size: 14px;;
   border: none;
   padding: 15px 20px;
   border-radius: 5px;
+   cursor: pointer;
 }
 
 .loginTitle{
