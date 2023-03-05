@@ -990,7 +990,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color:rgb(104, 102, 102);
+  background-color:rgb(8 110 114);
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
 
@@ -1009,7 +1009,7 @@ ul {
   align-items:center;
   margin-top: 20px;
   background-color: #fcebeb;
-  height: 400px;
+  /* height: 400px; */
   
   
 }
@@ -1055,7 +1055,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color:rgb(104, 102, 102);
+  background-color:rgb(8 110 114);
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -1107,7 +1107,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color:rgb(104, 102, 102);
+  background-color:rgb(8 110 114);
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
 }

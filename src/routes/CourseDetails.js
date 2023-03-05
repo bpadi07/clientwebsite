@@ -51,10 +51,10 @@ const CourseDetails = () => {
                     <p>Friday</p> <p>9:30 am - 6.00 pm</p>
                 </div>
                 <div className="working-hours">
-                    <p>Saturday</p> <p>9:30 am - 6.00 pm</p>
+                    <p>Saturday</p> <p>Closed</p>
                 </div>
                 <div className="working-hours">
-                    <p>Sunday</p> <p>9:30 am - 6.00 pm</p>
+                    <p>Sunday</p> <p>Closed</p>
                 </div>
             </div>
 
