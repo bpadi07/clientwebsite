@@ -17,7 +17,7 @@ import ItConsulting from '../routes/ItConsulting';
 import ItPlacement from '../routes/ItPlacement';
 import Ittraning from '../routes/Ittraning';
 import CourseDetails from '../routes/CourseDetails';
-
+import Signup from '../routes/Signup';
 const App = () => {
   return (
     <>
@@ -40,7 +40,10 @@ const App = () => {
           <Route path="IT-Placement" element={<ItPlacement />} />
           <Route path="IT-training" element={<Ittraning/>}/>
           <Route path="courses/*" element={<CourseDetails/>}/>
+          <Route path="Sign-Up" element={<Signup/>}/>
+          
           <Route path="*" element={<p>Not found!</p>} />
+           
         </Route>
       </Routes>
       

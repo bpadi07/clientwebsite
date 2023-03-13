@@ -8,8 +8,8 @@ export const menuItems = [
     url: '/services',
     submenu: [
       {
-        title: 'It Placement',
-        url: '/IT-Placement',
+        title: 'It training',
+        url: '/IT-training',    
       },
       {
         title: 'It Consulting',
@@ -35,8 +35,8 @@ export const menuItems = [
         //],
       },
       {
-        title: 'It training',
-        url: '/IT-training',
+        title: 'It placement',
+        url: '/IT-Placement',
       }
     ],
   },
@@ -61,5 +61,12 @@ export const menuItems = [
   {
     title: 'Member Login',
     url: '/login',
+  
+  submenu: [
+      {
+        title: 'Sign Up',
+        url: '/Sign-up',
+      },
+    ]
   }
 ];
