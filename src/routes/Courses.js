@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import { coursesdata } from '../staticdata/staticdata';
+
+
 
 const courses = () => {
   return (
@@ -8,35 +11,28 @@ const courses = () => {
           <h1>Courses</h1>
         </div>
         <div className="courseContent">
+         
+
+        {Object.keys(coursesdata).map((key, index) => {
+          return (
           <div className="courseList">
             <div className="courseThumbnail">
-              <img src="https://codenovas.com/wp-content/uploads/2022/04/MSPowerApp-272x161.jpg" alt="" />
-              <Link to="/" className="coursePreviewButton">
+              <img src={coursesdata[key].thumbnail} alt="" />
+              <Link to={coursesdata[key].url} className="coursePreviewButton">
                 PREVIEW THIS COURSE
               </Link>
             </div>
             <div className="courseDescription">
-              <p>Microsoft</p>
-              <Link to="sharepoint"><h3>SharePoint (PowerApps)</h3></Link>
-              <p>Microsoft PowerApps: Learn Power Apps & Be Pro At PowerApps</p>
-              <h3>Free</h3>
+              <p>{coursesdata[key].brand}</p>
+              <Link to={coursesdata[key].url}><h3>{coursesdata[key].title}</h3></Link>
+              <p>{coursesdata[key].short_dec}</p>
+              <h3>{coursesdata[key].subscription_type}</h3>
             </div>
           </div>
+          )
+           })} 
 
-           <div className="courseList">
-            <div className="courseThumbnail">
-              <img src="https://codenovas.com/wp-content/uploads/2022/04/MSSharePoint-272x161.jpg" alt="" />
-              <Link to="/" className="coursePreviewButton">
-                PREVIEW THIS COURSE
-              </Link>
-            </div>
-            <div className="courseDescription">
-              <p>Microsoft</p>
-              <Link to="mssharepoint"><h3>MS SharePoint</h3></Link>
-              <p>This course will provide you instructions on using SharePoint Online, including Team Sites and OneDrive for Business.</p>
-              <h3>Free</h3>
-            </div>
-          </div>
+
         </div>
       </div>
     </>
