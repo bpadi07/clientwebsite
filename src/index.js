@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 // styles
 import './App.css';
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -14,3 +16,5 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+

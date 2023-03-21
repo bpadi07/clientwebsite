@@ -58,8 +58,20 @@ export const menuItems = [
     //   },
     // ],
   },
-  {
-    title: 'Member Login',
-    url: '/login',
-  }
+  
+];
+
+
+export const loginMenuItems = [
+  // {
+  //   title: 'Logout',
+  //   url: '/logout',
+  // }
+];
+
+export const notLoginMenuItems = [
+  // {
+  //   title: 'Member Login',
+  //   url: '/login',
+  // }
 ];

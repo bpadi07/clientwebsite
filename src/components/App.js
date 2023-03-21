@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from '../routes/Home';
 import WebDesign from '../routes/WebDesign';
 import SEO from '../routes/SEO';
@@ -19,6 +19,7 @@ import Ittraning from '../routes/Ittraning';
 import CourseDetails from '../routes/CourseDetails';
 
 const App = () => {
+  const user=true;
   return (
     <>
       <Routes>
@@ -33,9 +34,9 @@ const App = () => {
           <Route path="php" element={<PHP />} />
           <Route path="who-we-are" element={<AboutWho />} />
           <Route path="our-values" element={<OurValues />} />
-          <Route path="login" element={<Login />} />          
+          <Route path="login" element={user ?<Navigate to="/"/>:<Login />}/>      
           <Route path="aboutus" element={<AboutUs />} />
-          <Route path="Courses" element={<Courses />} />
+          <Route path="Courses" element={user ? <Courses />:<Navigate to="/login"/>} />
           <Route path="IT-Consulting" element={<ItConsulting />} />
           <Route path="IT-Placement" element={<ItPlacement />} />
           <Route path="IT-training" element={<Ittraning/>}/>
