@@ -21,11 +21,7 @@ const CourseDetails = () => {
                 <TabMenu />
             </div>
             <div className="course-deatails-col2">
-                <div className="add-to-wishlist">
-                    <Link to="/" >
-                        <p><i className="fa fa-heart-o"></i>Add to Wishlist</p>
-                    </Link>
-                </div>
+                
                 <Link to="/" className="enroll-btn">
                     <b>ENROLL COURSE</b>
                 </Link>

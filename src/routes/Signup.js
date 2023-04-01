@@ -1,7 +1,24 @@
-import React from 'react'
 import Select from 'react-select';
+import React,{useState} from 'react'
+
+
 const Signup = () => {
   
+    const options = [
+     {value:"No high School" ,label: "No high School"},
+     {value:"Highschool or equivalent" ,label: "Highschool or equivalent"},
+     {value:"Technical or occupational certificate",label: "Technical or occupational certificate"},
+     {value:"Associate degree",label: "Associate degree"},
+     {value:"Some college coursework",label: "Some college coursework"},
+     {value:"Bachelor's degree",label: "Bachelor's degree"},
+     {value:"Master's degree",label: "Master's degree"},
+     {value:"Doctorate",label: "Doctorate"},
+     {value:"Professional",label: "Professional"},
+
+    ]
+
+    const [show,setShow]=useState(false)
+
     return (
     <>
 <div className="container">
@@ -40,19 +57,10 @@ const Signup = () => {
                 <input type="text" name="Mobile No" placeholder="Mobile No"/>
             </div> 
             <div className="input-box">
+            
                 <span className="details">Highest Academic Level</span>
                 <div>
-                  <select>
-                    <option value="No high School">No high School</option>
-                    <option value="Highschool or equivalent">Highschool or equivalent</option>
-                    <option value="Technical or occupational certificate">Technical or occupational certificate</option>
-                    <option value="Associate degree">Associate degree</option>
-                    <option value="Some college coursework">Some college coursework</option>
-                    <option value="Bachelor's degree">Bachelor's degree</option>
-                    <option value="Master's degree">Master's degree</option>
-                    <option value="Doctorate">Doctorate</option>
-                    <option value="Professional">Professional</option>
-                  </select>
+                  <Select options={options}  placeholder="select your choice"/>
                 </div>    
             </div>     
               
@@ -64,9 +72,28 @@ const Signup = () => {
             </div> 
             <div className="chkbox"> 
               <lable>
-                <input type="checkbox"/>
+                <input type="checkbox" onClick={()=>setShow(!show)}/>
                  Register as Instructor
               </lable> 
+              <div className="chk-input">
+              <div className="input-box">
+               { 
+               show?<span className="details">Degree</span>:null
+               }
+                {
+                 show? <input type="text" name="Degree" placeholder="Degree"/>:null
+                }
+              </div> 
+              <div className="input-box">
+                {
+                show?<span className="details">Expertise</span>:null
+                }
+                {
+                show?<input type="text" name="Expertise" placeholder="Expertise"/>:null
+                }
+              </div> 
+              </div>
+
             </div>
               <div>
                 <button className="btn">Registration</button>   

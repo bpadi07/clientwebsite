@@ -2,20 +2,20 @@
 const AboutUs = () => {
   return (
 <>
-  <div className="main-div">      
-    <div className="col1">
+<div className="main-div">      
+  <div className="col1">
        <div className="welcome-title">
            <h2>WelCome to CodeNovas!</h2>
        </div>
     
-       <div  className="purpose">
+       <div  className="content">
           <h4>purpose</h4>
             <p>
                 <span>Code nova is an educational and sport funs website for <b>Guest</b>, <b>Subscriber</b>, <b>Collaborator</b> and <b>Student</b> either to learn or teach the whole course or use specific section of the course as a reference via video or text or sport fans to watch live or highlight NFL and Premier League games.</span>
             </p>
         </div>
 
-        <div className="Feature">
+        <div className="content">
           <h4>Feature</h4>
             <p>
               <span>Website will contain Programming languages, Data Science, MuleSoft, SQL etc. (to be added) courses. Courses will have both YouTube linked video or Text. Code nova users will have the free and membership with fee service.
@@ -23,7 +23,7 @@ const AboutUs = () => {
             </p> 
          </div>  
 
-         <div className="TargetUser">
+         <div className="content">
          <h4>Target User</h4>
          </div>
            <div className="list">
@@ -47,25 +47,24 @@ const AboutUs = () => {
              </ul>
              </div>
 
-             <div className="aboutus-oulist">
+             <div className="content">
               <h4>Unordered & Ordered Lists</h4><br></br>
               <pre className="fa fa-thumbs-up" style-prop-object="font-size:50px" color="yellow">           Online Courses with full discount systems.</pre><br></br><br></br>
               <pre className="fa fa-thumbs-up" style-prop-object="font-size:50px" color="yellow">           Online Certificates which can be used worldwide</pre>
-              </div>
+              </div><br></br>
             <div className="col1-img">
-              <img height="300" width="400" src="https://codenovas.com/wp-content/uploads/2018/05/course_image-2-1024x682.jpg" alt="computer lmg"/>
+              <img height="300" width="500" src="https://codenovas.com/wp-content/uploads/2018/05/course_image-2-1024x682.jpg" alt="computer lmg"/>
             </div>
-    </div>
-    <div  className="col2">
-       <img  width="500" height="500"src="https://codenovas.com/wp-content/uploads/2018/07/cat_2-1-1024x684.jpg" alt="painting"/>
-    
+  </div>
+  <div  className="col2">
+      <div>
+       <img  width="550" height="500"src="https://codenovas.com/wp-content/uploads/2018/07/cat_2-1-1024x684.jpg" alt="painting"/>
+      </div><br></br>
      <div className="aboutus-skill">
       <h3>Skill</h3>
       </div>
       <div className="aboutusskill-title">
       <h4 >Professional Certificate Courses (Online)</h4>
-    
-      
         <ul>
              <li>
               <span style-prop-object="fond-weight=400" margin="10px">Online certificates can be obtained in a range of specialized areas.</span>
@@ -80,11 +79,9 @@ const AboutUs = () => {
                   <span style-prop-object="fond-weight=400" margin="10px">Online Summer courses are a great way to gain qualifications.</span>   
              </li>        
         </ul>
-      </div>
+    </div>
   </div>   
-  </div>
-  <br></br>
-  <br></br>
+</div>
   <hr></hr>
 
     <div  className="aboutus-certification">

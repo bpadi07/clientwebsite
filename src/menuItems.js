@@ -61,12 +61,6 @@ export const menuItems = [
   {
     title: 'Member Login',
     url: '/login',
-  
-  submenu: [
-      {
-        title: 'Sign Up',
-        url: '/Sign-up',
-      },
-    ]
+
   }
 ];

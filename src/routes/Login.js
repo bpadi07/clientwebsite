@@ -2,6 +2,7 @@
 import Google from "../img/btn_google_img.png";
 import Facebook from "../img/facebook.png";
 import Github from "../img/github.png";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const google = () => {
@@ -41,9 +42,14 @@ const Login = () => {
         <div className="login-right">
           <input type="text" placeholder="Username" />
           <input type="password" placeholder="Password" />
-          <button className="login-submit">Login</button>
+          <div className="rem-frgotpass">
+             <label><input type="checkbox"/>Remember me</label>
+             <Link to="/" ><h5>Forgot password</h5></Link>
+          </div>
+          <button className="login-submit">Login</button><br></br>
+          <p className="signup_link">Don't have an account? <Link to='/login/*'>Signup</Link></p>
         </div>
-      </div>
+        </div>
     </div>
   );
 };
