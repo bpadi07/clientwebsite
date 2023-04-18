@@ -781,31 +781,21 @@ height: 25px;
 /*about us*/
 
 .main-div{ 
-  height: auto; 
+height: auto;
 width: 100%;
 display: flex;
-justify-content: space-between;
+justify-content:space-between;
 flex-wrap: wrap;
-padding: 5%;
-
+padding: 50px;
 }
 
-.col1,.col2{
-  width: 47%;
+.content,.aboutus-heading,.aboutus-para{
+   margin-bottom: 20px;
+   text-align:justify}
+
+.col1{
+  width:47%;
 }
-
-
-.content h4,p,li{
-  margin-bottom: 5%;
-  color:#0a0606; 
-  text-align: justify;
-}
-
-.content ,span{
-  text-align:justify;
-  color: #666;
-}
-
 .col1-img{
   margin-top: 10%;
 }
@@ -831,10 +821,18 @@ padding: 5%;
 }
 
 .main-div2 img{
+  display: block;
   border: solid 20px rgb(82, 12, 12);
 }
 
-
+@media screen and (max-width: 768px) {
+  .main-div{
+  flex-direction:column;
+  }
+  .col1{
+    max-width: 80%;
+  }
+}
 /*servicess*/
 
 .placement-courses-main1{
@@ -873,8 +871,9 @@ padding: 5%;
 }
 
 .palcement-content1{
-  font-size: 33px;
+  font-size: 28px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:left;
   /*margin-right: 70px;
   margin-left: 20PX;*/
   
