@@ -1,4 +1,7 @@
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
+import React from 'react';
+import Coursedata from '../coursedata';
+
 
 const courses = () => {
   return (
@@ -8,41 +11,33 @@ const courses = () => {
           <h1>Courses</h1>
         </div>
         <div className="courseContent">
-          <div className="courseList">
-            <div className="courseThumbnail">
-              <img src="https://codenovas.com/wp-content/uploads/2022/04/MSPowerApp-272x161.jpg" alt="" />
-              <Link to="/" className="coursePreviewButton">
+          {
+          Coursedata.map(course =>{
+            return(
+              <div className="courseList">
+             <div className="courseThumbnail" key={course.id}>
+             <img src={course.thumbnail} alt="" />
+             <Link to={course.url} className="coursePreviewButton">
                 PREVIEW THIS COURSE
               </Link>
-            </div>
-            <div className="courseDescription">
-              <p>Microsoft</p>
-              <Link to="sharepoint"><h3>SharePoint (PowerApps)</h3></Link>
-              <p>Microsoft PowerApps: Learn Power Apps & Be Pro At PowerApps</p>
-              <h3>Free</h3>
-            </div>
+              </div>
+              <div className="courseDescription">
+              <p>{course.brand}</p>
+              <Link to={course.url}><h3>{course.title}</h3></Link>
+              <p>{course.short_dec}</p>
+              <h3>{course.subscription_type}</h3>
+              </div>
+              </div>
+              
+          
+            )
+          })}
           </div>
-
-           <div className="courseList">
-            <div className="courseThumbnail">
-              <img src="https://codenovas.com/wp-content/uploads/2022/04/MSSharePoint-272x161.jpg" alt="" />
-              <Link to="/" className="coursePreviewButton">
-                PREVIEW THIS COURSE
-              </Link>
-            </div>
-            <div className="courseDescription">
-              <p>Microsoft</p>
-              <Link to="mssharepoint"><h3>MS SharePoint</h3></Link>
-              <p>This course will provide you instructions on using SharePoint Online, including Team Sites and OneDrive for Business.</p>
-              <h3>Free</h3>
-            </div>
           </div>
-        </div>
-      </div>
-    </>
+ </>
+       )
+  
+    };
 
-  )
-
-};
 
 export default courses;
