@@ -1028,7 +1028,7 @@ padding: 50px;
 .input-box input{
   height: 30px;
   width:100%;
-  padding: 20px;
+  padding: 15px;
   outline: none;
   border:none;
   margin: 3px;
@@ -1093,3 +1093,7 @@ padding: 50px;
   flex-wrap: wrap;  
 }
 
+.form_error{
+  color: rgb(238, 65, 65);
+
+}

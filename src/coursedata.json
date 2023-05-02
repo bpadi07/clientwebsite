@@ -6,7 +6,9 @@
          "title":"SharePoint (PowerApps)",
          "short_dec" : "Microsoft PowerApps: Learn Power Apps & Be Pro At PowerApps",
          "subscription_type":"Free",
-         "url":"sharepoint"
+         "url":"sharepoint",
+         "curiculam": "this is curiculam tab",
+         "course_title": "SharePoint (PowerApps)"
 
     },
     {
@@ -16,7 +18,8 @@
              "title":"MS SharePoint",
              "short_dec" : "This course will provide you instructions on using SharePoint Online, including Team Sites and OneDrive for Business",
              "subscription_type":"Free",
-             "url":"mssharepoint"
+             "url":"mssharepoint",
+             "course_title": "MS SharePoint"
       },
       {
         "id": "MS SharePoint",

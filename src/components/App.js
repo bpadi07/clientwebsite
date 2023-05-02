@@ -18,6 +18,8 @@ import ItPlacement from '../routes/ItPlacement';
 import Ittraning from '../routes/Ittraning';
 import CourseDetails from '../routes/CourseDetails';
 import Signup from '../routes/Signup';
+
+
 const App = () => {
   return (
     <>

@@ -28,8 +28,6 @@ const courses = () => {
               <h3>{course.subscription_type}</h3>
               </div>
               </div>
-              
-          
             )
           })}
           </div>
