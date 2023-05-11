@@ -1,20 +1,19 @@
 import React from "react";
-import Coursedata from '../../coursedata';
+import courseData from '../../coursedata';
+import {useParams} from 'react-router-dom';
 
 
 const CurriculumTab = () => {
+
+  const {courseId} = useParams();
+  const thisCourse = courseData.find(cour => cour.id === courseId);
+
   return (
     <>
     <div className="course-curriculam-tab" >
-       {
-        Coursedata.map(course =>{
-          return(
-            <div className="curricontent" key={course.id}>
-            <p>{course.curiculam}</p>
-            </div>
-          )
-      
-        })}
+        
+            <p>{thisCourse.curiculam}</p>
+           
     </div>
    
    

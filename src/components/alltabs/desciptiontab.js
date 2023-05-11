@@ -1,17 +1,18 @@
 import React from "react";
+import {useParams} from "react-router-dom";
+import courseData from "../../coursedata";
 
 
 const DescriptionTab = () => {
+
+   const {courseId} = useParams();
+   const thisCourse = courseData.find(cour => cour.id === courseId)
   return (
     <div className="course-desc-tab">
 
-      <img src="https://codenovas.com/wp-content/uploads/2022/04/MSPowerApp-866x440.jpg" alt="MSPowerApp" />
-      <p>
-        Several teams employ SharePoint lists to access, share, and cooperate about organized data.  So, the ability to form apps utilizing PowerApps that take advantage of SharePoint lists as a data source was an essential capability.
-      </p>
-      <p>
-        Power Apps is a part of the Microsoft 365 suite, but it’s separated from a SharePoint. Power Apps is created to work with a wide variety of database sources; it can surely be connected to any SharePoint list, library, or One Drive, enabling you to extract or store information without any databases and SQL knowledge. Additionally, it is entirely integrated into the SharePoint web and mobile experience, that is itself connected to the data stored in SharePoint lists.
-      </p>
+      <img src={thisCourse.discription.image_url} alt="MSPowerApp" />
+      <p>{thisCourse.discription.para_1}</p>
+      <p>{thisCourse.discription.para_2}</p>
       <h1>Main Features</h1>
       <div className="course-main-features">
         <div className="course-features">

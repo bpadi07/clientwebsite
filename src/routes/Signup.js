@@ -12,7 +12,7 @@ const initialValues = {
   First_Name: '',
   Last_Name: '',
   Mobile_No: '',
-  instructchk: false,
+  instructChk: false,
   Degree: '',
   Expertise: '',
 };
@@ -33,8 +33,7 @@ const Signup = () => {
     ];
     
     
-    const [show,setShow] = useState(false)
-
+    const[show, setShow] = useState(false);    
     
     const [isChecked, setIsChecked] = useState(false);
     
@@ -119,32 +118,29 @@ const Signup = () => {
             </div> 
             <div className="chkbox"> 
               <lable>
-                <input type="checkbox" name="instructchk" value={values.instructchk} onChange={handleChange} onBlur={handleBlur} onClick={()=>setShow(!show)}/>
-                 Register as Instructor
-              </lable> 
+              
+                <input type="checkbox" name="instructChk" value={values.instructChk} onChange={handleChange} onBlur={handleBlur} onClick={()=>setShow(!show)}/>
+                Register as Instructor</lable> 
               
               
-              <div className="chk-input">
+             <div className="chk-input">
              
-              <div className="input-box">
-               { 
-               show?<span className="details">Degree</span>:null
-               }
-                {
-                 show? <input type="text" name="Degree" placeholder="Degree" value={values.Degree} onChange={handleChange} onBlur={handleBlur}/>:null
-                }
-                 
-                { show ? errors.Degree && touched.Degree ? (<p className="form_error">{errors.Degree}</p> ): null :null}
-                  
-              </div> 
+               <div className="input-box">
+              { show ? <span className="details">Degree</span> : null }
+              {show ?  <input type="text" name="Degree" placeholder="Degree" value={values.Degree} onChange={handleChange} onBlur={handleBlur}/>: null}
+                { show ? errors.Degree && touched.Degree ?(<p className="form_error">{errors.Degree}</p> ) : null: null}
+                </div> 
               <div className="input-box">
                 {
-                show?<span className="details">Expertise</span>:null
+                
+                show ? <span className="details">Expertise</span> : null
                 }
                 {
-                show?<input type="text" name="Expertise" placeholder="Expertise" value={values.Expertise} onChange={handleChange} onBlur={handleBlur}/>:null
+                
+                show ? <input type="text" name="Expertise" placeholder="Expertise" value={values.Expertise} onChange={handleChange} onBlur={handleBlur}/> : null
                 }
-                { show ? errors.Expertise && touched.Expertise ? (<p className="form_error">{errors.Expertise}</p>) : null : null}</div> 
+                { errors.Expertise && touched.Expertise ? (<p className="form_error">{errors.Expertise}</p>): null }
+                </div> 
               </div>
         
             </div>

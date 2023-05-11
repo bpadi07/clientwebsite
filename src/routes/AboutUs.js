@@ -53,12 +53,12 @@ const AboutUs = () => {
               <pre className="fa fa-thumbs-up" style-prop-object="font-size:50px" color="yellow">           Online Certificates which can be used worldwide</pre>
               </div><br></br>
             <div className="col1-img">
-              <img height="300" width="400" src="https://codenovas.com/wp-content/uploads/2018/05/course_image-2-1024x682.jpg" alt="computer lmg"/>
+              <img height="300" width="400" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/1280px-Desktop_computer_clipart_-_Yellow_theme.svg.png" alt="computer lmg"/>
             </div>
   </div>
   <div  className="col1">
       <div>
-       <img  width="560px" height="400px"src="https://codenovas.com/wp-content/uploads/2018/07/cat_2-1-1024x684.jpg" alt="painting"/>
+       <img  width="560px" height="400px"src="https://media.istockphoto.com/id/1219446896/vector/online-education-or-business-training-concept-online-man-mentor-on-laptop-with-books.jpg?s=612x612&w=0&k=20&c=pOy3kDExDonmzNx0ynZlV_kyiSy70DFOQwApvm_pDNw=" alt="painting"/>
       </div><br></br>
      <div className="aboutus-skill">
       <h3 className="heading">Skill</h3>

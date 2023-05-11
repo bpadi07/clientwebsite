@@ -58,7 +58,6 @@ const Login = () => {
     name: '',
     password: ''})
 
-    alert("login successfully")
     }
     
   }      

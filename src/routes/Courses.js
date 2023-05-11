@@ -1,6 +1,6 @@
 import { Link} from 'react-router-dom';
 import React from 'react';
-import Coursedata from '../coursedata';
+import courseData from '../coursedata';
 
 
 const courses = () => {
@@ -12,24 +12,24 @@ const courses = () => {
         </div>
         <div className="courseContent">
           {
-          Coursedata.map(course =>{
+          courseData.map(course =>{
             return(
               <div className="courseList">
              <div className="courseThumbnail" key={course.id}>
              <img src={course.thumbnail} alt="" />
-             <Link to={course.url} className="coursePreviewButton">
+             <Link to={`/CourseDetails/${course.id}`} className="coursePreviewButton">
                 PREVIEW THIS COURSE
               </Link>
               </div>
               <div className="courseDescription">
               <p>{course.brand}</p>
-              <Link to={course.url}><h3>{course.title}</h3></Link>
+              <Link to={`/CourseDetails/${course.id}`}><h3>{course.title}</h3></Link>
               <p>{course.short_dec}</p>
               <h3>{course.subscription_type}</h3>
               </div>
               </div>
             )
-          })}
+            })}
           </div>
           </div>
  </>
