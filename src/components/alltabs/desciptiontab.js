@@ -13,11 +13,11 @@ const DescriptionTab = () => {
       <img src={thisCourse.discription.image_url} alt="MSPowerApp" />
       <p>{thisCourse.discription.para_1}</p>
       <p>{thisCourse.discription.para_2}</p>
-      <h1>Main Features</h1>
+      <h1>{thisCourse.discription.main_tit}</h1>
       <div className="course-main-features">
         <div className="course-features">
           <ul>
-            <li>What is PowerApps and how does it work with SharePoint</li>
+            <li>{thisCourse.discription.cours_list.li_1}</li>
             <li>Customizing SharePoint List Forms with PowerApps</li>
             <li>Building a standalone PowerApps App with SharePoint as a data source</li>
             <li>What is Power Automate and how does it work with SharePoint</li>
@@ -25,7 +25,7 @@ const DescriptionTab = () => {
         </div>
         <div className="course-features">
           <ul>
-            <li>Build a flow to approve and log your SharePoint content</li>
+            <li>{thisCourse.discription.cours_list.li_1}</li>
             <li>Build a Flow to import a File, create items, post to Teams, and error checking</li>
             <li>Connect Power Apps and Flow to make a PDF of your SharePoint data</li>
           </ul>
