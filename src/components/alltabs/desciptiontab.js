@@ -18,23 +18,21 @@ const DescriptionTab = () => {
         <div className="course-features">
           <ul>
             <li>{thisCourse.discription.cours_list.li_1}</li>
-            <li>Customizing SharePoint List Forms with PowerApps</li>
-            <li>Building a standalone PowerApps App with SharePoint as a data source</li>
-            <li>What is Power Automate and how does it work with SharePoint</li>
+            <li>{thisCourse.discription.cours_list.li_2}</li>
+            <li>{thisCourse.discription.cours_list.li_3}</li>
+            <li>{thisCourse.discription.cours_list.li_4}</li>
           </ul>
         </div>
         <div className="course-features">
           <ul>
-            <li>{thisCourse.discription.cours_list.li_1}</li>
-            <li>Build a Flow to import a File, create items, post to Teams, and error checking</li>
-            <li>Connect Power Apps and Flow to make a PDF of your SharePoint data</li>
+            <li>{thisCourse.discription.cours_list.li_5}</li>
+            <li>{thisCourse.discription.cours_list.li_6}</li>
+            <li>{thisCourse.discription.cours_list.li_7}</li>
           </ul>
         </div>
       </div>
-      <h1>What is the target audience?</h1>
-      <p>
-      In the world of the information worker, you will handle information that is probably stored across different software suites, like SharePoint, Salesforce, Excel file, Access database, … Typically, you would like your end-users to be able to browse and/or modify this data in a general user-friendly, and preferably mobile, way. Microsoft Power Apps allows people, without any development skills, to build applications that are mobile-friendly on top of their data. Allowing other people to use the built application to browse the data and maybe even modify it.
-      </p>
+      <h1>{thisCourse.target_audiance_heading}</h1>
+      <p>{thisCourse.target_audiance_para}</p>
     </div>
   );
 };

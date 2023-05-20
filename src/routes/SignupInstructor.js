@@ -2,6 +2,7 @@ import Select from 'react-select';
 import React, {useState} from 'react';
 import {useFormik} from 'formik';
 import {signupSchema} from '../schemas/signupvalidation';
+import axios from 'axios';
 
 
 const initialValues = {
@@ -12,8 +13,7 @@ const initialValues = {
   First_Name: '',
   Last_Name: '',
   Mobile_No: '',
-  instructChk: false,
-  Degree: '',
+    Degree: '',
   Expertise: '',
 };
 
@@ -32,10 +32,8 @@ const Signup = () => {
 
     ];
     
-    
-    const[show, setShow] = useState(false);    
-    
     const [isChecked, setIsChecked] = useState(false);
+    const [result, setResult] = useState(null);
     
     const handleCheckboxChange = (e) =>{
     
@@ -43,26 +41,32 @@ const Signup = () => {
     
         };
 
-      
      const { values, errors, touched, handleChange, handleSubmit, handleBlur} = useFormik({
       initialValues: initialValues,  //if key and vaues is same so we dont need to write w
       validationSchema: signupSchema,
-      onSubmit: (values, action) => {  
+      onSubmit:  async(values, action) => {  
       console.log(values);
 
         action.resetForm();
 
-      },
       
-    });
-
-     
+          try {
+            const response = await axios.get(
+              "https://emailvalidation.abstractapi.com/v1/?api_key=4095d063ee9c48ae856cba31d64918d1&email=minalsutar2@gmail.com"
+            );
+      
+            setResult(response.data);
+          } catch (errors) {
+            console.log(errors);
+          }
+      },
+});
     
     return (
     <>
 <div className="container">
    <div className="form-box">
-  <div className="title">Registration</div><br></br>
+  <div className="title"> Instructor Registration</div><br></br>
     <form action="#" onSubmit={handleSubmit}>
         <div className="user-details">
           <div className="input-box"> 
@@ -73,7 +77,7 @@ const Signup = () => {
           <div className="input-box">     
               <span className="details">Email</span>
               <input type="text" name="Email" placeholder="Enter your Email" value = {values.Email} onChange={handleChange} onBlur={handleBlur}/>
-              {errors.Email && touched.Email ? (<p className="form_error">{errors.Email}</p>) : null}
+              {errors.Email && touched.Email ? (<p className="form_error" style={{color:"red"}}>{errors.Email}</p>) : null} 
           </div>
            
           <div className="input-box">   
@@ -82,7 +86,7 @@ const Signup = () => {
               {errors.Password  && touched.Password  ? (<p className="form_error">{errors.Password }</p>) : null}
           </div> 
           <div className="input-box">   
-                <span className="details">Password Again</span>
+                <span className="details">Re-enter Password</span>
                 <input type="text" name="Password_Again" placeholder="Password Again" value={values.Password_Again} onChange={handleChange} onBlur={handleBlur}/>
                 { errors.Password_Again  && touched.Password_Again  ? (<p className="form_error">{errors.Password_Again }</p>) : null}
           </div>
@@ -96,12 +100,23 @@ const Signup = () => {
               <input type="text " name="Last_Name" placeholder="Last Name" value={values.Last_Name} onChange={handleChange} onBlur={handleBlur}/>
               { errors.Last_Name  && touched.Last_Name  ? (<p className="form_error">{errors.Last_Name }</p>) : null}
          </div>
+         <div className="input-box">
+              <span className="details">Degree</span>
+             <input type="text" name="Degree" placeholder="Degree" value={values.Degree} onChange={handleChange} onBlur={handleBlur}/>
+                {errors.Degree && touched.Degree ?(<p className="form_error">{errors.Degree}</p> ) : null}
+          </div> 
+          <div className="input-box">
+                 <span className="details">Expertise</span> 
+                 <input type="text" name="Expertise" placeholder="Expertise" value={values.Expertise} onChange={handleChange} onBlur={handleBlur}/>
+                { errors.Expertise && touched.Expertise ? (<p className="form_error">{errors.Expertise}</p>): null }
+          </div>
          </div>      
             <div className="input-box">
                 <span className="details">Mobile No</span>
                 <input type="text" name="Mobile_No" placeholder="Mobile No" value={values.Mobile_No} onChange={handleChange} onBlur={handleBlur}/>
                 {errors.Mobile_No && touched.Mobile_No ? <p className="form_error">{errors.Mobile_No}</p> : null}
-            </div> 
+            </div>
+             
             <div className="input-box">
             
                 <span className="details" >Highest Academic Level</span>
@@ -117,30 +132,10 @@ const Signup = () => {
               </lable>
             </div> 
             <div className="chkbox"> 
-              <lable>
-              
-                <input type="checkbox" name="instructChk" value={values.instructChk} onChange={handleChange} onBlur={handleBlur} onClick={()=>setShow(!show)}/>
-                Register as Instructor</lable> 
-              
               
              <div className="chk-input">
              
-               <div className="input-box">
-              { show ? <span className="details">Degree</span> : null }
-              {show ?  <input type="text" name="Degree" placeholder="Degree" value={values.Degree} onChange={handleChange} onBlur={handleBlur}/>: null}
-                { show ? errors.Degree && touched.Degree ?(<p className="form_error">{errors.Degree}</p> ) : null: null}
-                </div> 
-              <div className="input-box">
-                {
-                
-                show ? <span className="details">Expertise</span> : null
-                }
-                {
-                
-                show ? <input type="text" name="Expertise" placeholder="Expertise" value={values.Expertise} onChange={handleChange} onBlur={handleBlur}/> : null
-                }
-                { errors.Expertise && touched.Expertise ? (<p className="form_error">{errors.Expertise}</p>): null }
-                </div> 
+               
               </div>
         
             </div>

@@ -17,7 +17,9 @@ import ItConsulting from '../routes/ItConsulting';
 import ItPlacement from '../routes/ItPlacement';
 import Ittraning from '../routes/Ittraning';
 import CourseDetails from '../routes/CourseDetails';
-import Signup from '../routes/Signup';
+import SignupStudent from '../routes/SignupStudent';
+import SignupInstructor from '../routes/SignupInstructor';
+import SignupPage from '../routes/SignupPage';
 
 
 const App = () => {
@@ -42,8 +44,9 @@ const App = () => {
           <Route path="IT-Placement" element={<ItPlacement />} />
           <Route path="IT-training" element={<Ittraning/>}/>
           <Route path="CourseDetails/:courseId" element={<CourseDetails/>}/>
-          <Route path="login/*" element={<Signup/>}/>
-          
+          <Route path="signupstudent/*" element={<SignupStudent/>}/>
+          <Route path="signupinstructor/*" element={<SignupInstructor/>}/>
+          <Route path="signupPage/*" element={<SignupPage/>}/>
           <Route path="*" element={<p>Not found!</p>} />
            
         </Route>

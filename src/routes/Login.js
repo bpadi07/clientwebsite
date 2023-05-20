@@ -102,7 +102,7 @@ return (
              <Link to="/" ><h5>Forgot password</h5></Link>
           </div>
           <button className="login-submit" onClick={postData}>Login</button>
-          <p className="signup_link">Don't have an account? <Link to='/login/*'>Signup</Link></p>
+          <p className="signup_link" style={{color:"black" , font_weight:"bold"}}>Don't have an account? <Link to='/signupPage/*'>Signup</Link></p>
         </div>
         
         
