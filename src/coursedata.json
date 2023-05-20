@@ -1,9 +1,9 @@
 [
     {
-         "id":"SharePoint (PowerApps)",  
+         "id":"Oracle ",  
          "thumbnail":"https://codenovas.com/wp-content/uploads/2022/04/MSPowerApp-272x161.jpg",
-         "brand":"Microsoft",
-         "title":"SharePoint (PowerApps)",
+         "brand":"Oracle",
+         "title":"Oracle DB",
          "short_dec" : "Microsoft PowerApps: Learn Power Apps & Be Pro At PowerApps",
          "subscription_type":"Free",
          "url":"sharepoint"
@@ -25,6 +25,7 @@
         "title":"store procedure database",
         "short_dec" : "This course will provide you instructions on using SharePoint Online, including Team Sites and OneDrive for Business",
         "subscription_type":"Free",
-        "url":"mssharepoint-oracle"
+        "url":"mssharepoint"
  }
+ 
 ]

@@ -17,8 +17,6 @@ const courses = () => {
               <div className="courseList">
              <div className="courseThumbnail" key={course.id}>
              <img src={course.thumbnail} alt="" />
-
-             
              <Link to={course.url} className="coursePreviewButton">
                 PREVIEW THIS COURSE
               </Link>
@@ -30,7 +28,8 @@ const courses = () => {
               <h3>{course.subscription_type}</h3>
               </div>
               </div>
-
+              
+          
             )
           })}
           </div>

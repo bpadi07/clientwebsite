@@ -18,6 +18,7 @@ import ItPlacement from '../routes/ItPlacement';
 import Ittraning from '../routes/Ittraning';
 import CourseDetails from '../routes/CourseDetails';
 import Signup from '../routes/Signup';
+import StudentSignup from '../routes/StudSignup';
 const App = () => {
   return (
     <>
@@ -33,15 +34,18 @@ const App = () => {
           <Route path="php" element={<PHP />} />
           <Route path="who-we-are" element={<AboutWho />} />
           <Route path="our-values" element={<OurValues />} />
+          
           <Route path="login" element={<Login />} />          
+          
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="Courses" element={<Courses />} />
           <Route path="IT-Consulting" element={<ItConsulting />} />
           <Route path="IT-Placement" element={<ItPlacement />} />
           <Route path="IT-training" element={<Ittraning/>}/>
           <Route path="courses/*" element={<CourseDetails/>}/>
-          <Route path="signup" element={<Signup/>}/>
-          
+          <Route path="login/*" element={<Signup/>}/>
+          <Route path="student-signup" element={<StudentSignup/>}/>
+
           <Route path="*" element={<p>Not found!</p>} />
            
         </Route>

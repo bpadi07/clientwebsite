@@ -12,11 +12,16 @@ const CourseDetails = () => {
 
     const [newUser, setUser] = useState("");
     const [newGmail, setGmail] = useState("");
-    const [isReg, setIsReg] = useState(false)
+    // const [isReg, setIsReg] = useState(true);
    
 const cource_name = 'SharePoint';
 
 const usersCollection = new collection(db,"course-enrol-user");
+
+// const handleSwitch = () => {
+//     setIsReg(false);
+//     console.log("handleSwitch "+ isReg);
+// }
 
 const registerUser = async () => {
     
@@ -34,7 +39,7 @@ const registerUser = async () => {
     }
     else
     {
-    await addDoc(usersCollection, {user_name:newUser, gmail:newGmail, course:cource_name });
+     await addDoc(usersCollection, {user_name:newUser, gmail:newGmail, course:cource_name });
     setUser('');
     setGmail('');
     toast.success('Registered successfully', {
@@ -72,11 +77,13 @@ const registerUser = async () => {
             <div className="course-deatails-col2">
                 
                 <input value={newGmail} className="course-user-register-input" placeholder="Enter your email address" onChange={(event)=>{setGmail(event.target.value)}} required/>
+
                 <input value={newUser} className="course-user-register-input" placeholder="Enter your Full name" onChange={(event)=>{setUser(event.target.value)}} required />
                 
                 < >
                     <button className="enroll-btn" onClick={registerUser}>ENROLL COURSE</button>
                 </>
+
                <CourseProperties />
 
                 <PopularCourses />
