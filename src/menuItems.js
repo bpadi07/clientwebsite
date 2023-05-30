@@ -1,3 +1,6 @@
+
+
+
 export const menuItems = [
   {
     title: 'Home',
@@ -8,8 +11,8 @@ export const menuItems = [
     url: '/services',
     submenu: [
       {
-        title: 'It Placement',
-        url: '/IT-Placement',
+        title: 'It training',
+        url: '/IT-training',    
       },
       {
         title: 'It Consulting',
@@ -35,8 +38,8 @@ export const menuItems = [
         //],
       },
       {
-        title: 'It training',
-        url: '/IT-training',
+        title: 'It placement',
+        url: '/IT-Placement',
       }
     ],
   },
@@ -57,21 +60,10 @@ export const menuItems = [
     //     url: 'our-values',
     //   },
     // ],
-  },
-  
-];
+  },  
+  {
+    title: 'Member Login',
+    url: '/login',
 
-
-export const loginMenuItems = [
-  // {
-  //   title: 'Logout',
-  //   url: '/logout',
-  // }
-];
-
-export const notLoginMenuItems = [
-  // {
-  //   title: 'Member Login',
-  //   url: '/login',
-  // }
+  }
 ];

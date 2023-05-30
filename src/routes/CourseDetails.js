@@ -1,9 +1,144 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import TabMenu from "../components/tabmenu";
 import PopularCourses from '../components/PopularCourses';
 import CourseProperties from '../components/CourseProperties';
+import { db } from '../firebase';
+import { collection, addDoc,  } from 'firebase/firestore';
+// import { useState,useEffect } from 'react'; 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { query, where, getDocs } from "firebase/firestore";
 
 const CourseDetails = () => {
+
+ 
+
+//     const refUserInformation = database.ref('UserInformation/')
+// const currentUserQuery = refUserInformation.orderByChild('user_id').equalTo(user.uid);
+// currentUserQuery.on('value', function(snapshot){
+//   snapshot.forEach((data) => {
+//     console.log(data.val())
+//   });
+// })
+
+    // const [newUser, setUser] = useState("");
+    // const [newGmail, setGmail] = useState("");
+    // const [isReg, setIsReg] = useState(true);
+   
+const cource_name = 'SharePoint';
+
+const username = window.localStorage.getItem("username");
+const mail = window.localStorage.getItem("user");
+
+
+const usersCollection = new collection(db,"course-enrol-user");
+const q = query(usersCollection, where("Mail", "==", mail));
+
+
+// const searchQuery = { Mail: mail };
+// const searchResults = usersCollection.find({ Mail: mail });
+
+
+// const handleSwitch = () => {
+//     setIsReg(false);
+//     console.log("handleSwitch "+ isReg);
+// }
+
+const registerUser = async () => {
+    
+    if(!username && !mail){
+        toast.error('Enter email and password', {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+    }
+    else
+    {
+    //  await addDoc(usersCollection, {user_name:newUser, gmail:newGmail, course:cource_name });
+    // setUser('');
+    // setGmail('');
+    getDocs(q)
+  .then((querySnapshot) => {
+    if (querySnapshot.size === 0) {
+      // No document with the same username exists, proceed with adding new data
+    //   usersCollection.add({
+    //     user_name: username,
+    //     mail: mail,
+    //     course: cource_name
+    //     // Other fields...
+    //   })
+    
+    addDoc(usersCollection, { User : username, Mail: mail, course:cource_name })
+      .then((docRef) => {
+        toast.success('Registered successfully', {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+      })
+      .catch((error) => {
+        toast.error('Something went Wrong', {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+      });
+    } else {
+      // A document with the same username already exists, handle the duplication
+    //   console.log("Document with the same username already exists.");
+      // Handle the duplication scenario as per your requirements
+      toast.error('You have already Enrolled', {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+    }
+  })
+  .catch((error) => {
+    console.error("Error querying documents: ", error);
+    toast.error('Something went Wrong', {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+  });
+
+
+
+    // await addDoc(usersCollection, { User : username, Mail: mail, course:cource_name });
+    
+
+    }
+    
+}
+
+
     return (
         <div className="course-deatails-container">
             <div className="course-deatails-col1">
@@ -21,14 +156,15 @@ const CourseDetails = () => {
                 <TabMenu />
             </div>
             <div className="course-deatails-col2">
-                <div className="add-to-wishlist">
-                    <Link to="/" >
-                        <p><i className="fa fa-heart-o"></i>Add to Wishlist</p>
-                    </Link>
-                </div>
-                <Link to="/" className="enroll-btn">
-                    <b>ENROLL COURSE</b>
-                </Link>
+                
+                {/* <input value={newGmail} className="course-user-register-input" placeholder="Enter your email address" onChange={(event)=>{setGmail(event.target.value)}} required/>
+
+                <input value={newUser} className="course-user-register-input" placeholder="Enter your Full name" onChange={(event)=>{setUser(event.target.value)}} required /> */}
+                
+                < >
+                    <button className="enroll-btn" onClick={registerUser}>ENROLL COURSE</button>
+                </>
+
                <CourseProperties />
 
                 <PopularCourses />
@@ -57,10 +193,11 @@ const CourseDetails = () => {
                     <p>Sunday</p> <p>Closed</p>
                 </div>
             </div>
-
+            <ToastContainer />
             </div>
         </div>
     );
 };
+
 
 export default CourseDetails;

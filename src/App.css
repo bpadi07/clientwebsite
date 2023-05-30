@@ -300,20 +300,8 @@ button span {
 .react-slideshow-wrapper .images-wrap>div[aria-hidden='true'] {
   display: none;
 }
-/*aboutus*/
-.main-div{
- /* max-height: 2000px;*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 
-}
 
-/*.col1,.col2{
-  max-height: 1000;
-  max-width: 900px; 
-
-}*/
 /* Maruti D */
 .row_flex, .row_flex3, .row_flex4
 {
@@ -325,6 +313,7 @@ button span {
   margin-top:20px;
   gap: 20px;
   flex-wrap: wrap;
+  align-items: center;
   
 }
 
@@ -332,28 +321,6 @@ button span {
   width: 45%;
  } 
 
-/*.row-flex3{
-  display :flex;
-  width: 90%;
-  max-height: 400px;
-  justify-content:space-around;
-  margin: auto;
-  margin-top:20px;
-  gap: 20px;
-  flex-wrap: wrap;
-  
-}
-
-.row-flex4{
-  display :flex;
-  width: 90%;
-  max-height: 400px;
-  justify-content:space-around;
-  margin: auto;
-  margin-top:20px;
-  gap: 20px;
-  flex-wrap: wrap;
-}*/
 
 .home_slider{
  
@@ -665,6 +632,7 @@ font-size: 14px;;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .login-wrapper {
@@ -718,7 +686,7 @@ font-size: 14px;;
 
 .loginButton{
   width: 70%;
-  padding: 4% 15px;
+  padding: 15px 15px;
   border-radius: 5px;
   color: white;
   display: flex;
@@ -726,7 +694,6 @@ font-size: 14px;;
   font-weight: bold;
   margin-bottom: 20px;
   cursor: pointer;
-  font-size: 1.5vw;
 }
 
 .google-login-btn{
@@ -774,6 +741,7 @@ height: 25px;
    cursor: pointer;
 }
 
+
 .loginTitle{
   position: absolute;
   top: 150px;
@@ -791,199 +759,80 @@ height: 25px;
     font-size: small;
   }
 }
+.rem-frgotpass{
+  display: flex;
+  column-gap: 3rem;
+}
+
+.login-right a{
+  text-decoration: none;
+  color:black;
+  place-items:initial;
+}
+
+.signup_link {
+  color: #ca0d0d;
+}
+
 /* Maruti D EOL */
 
-.welcome-title{
-  height: 100px;
-  width: 400px;
-  padding-top: 70px;
-  padding-left: 10px;
-  font-size: 20px;
+
+
+/*about us*/
+
+.main-div{ 
+height: auto;
+width: 100%;
+display: flex;
+justify-content:space-between;
+flex-wrap: wrap;
+padding: 50px;
 }
 
-.purpose{
-  height: 100px;
-  width: 600px;
-  margin: 40px;
-  margin-left: 10px;
-  padding-left: 2px;
+.content,.aboutus-heading,.aboutus-para{
+   margin-bottom: 20px;
+   text-align:justify}
+
+.col1{
+  width:47%;
 }
-.purpose p{
-  height: 100px;
-  width: 600px;
-  margin-top: 30px;
+.col1-img{
+  margin-top: 10%;
 }
-
-.Feature
-{
-  height: 100px;
-  width: 600px;
-  margin: 70px;
-  margin-left: 10px;
-}
-
-.Feature p{
-  height: 100px;
-  width: 600px;
-  margin-top: 30px;
-}
-
-.TargetUser{
-  height: 30px;
-  width: 600px;
-  margin-left: 10px;
-}
-.list{
-  height: 10px;
- width: 600px;
-  margin-top: 30px;
-  padding: 10px;
-
-}
-
-.list ul li{
-  margin-bottom: 8px;
-}
-
-.li {
-  display: list-item;
-  text-align: webkit-match-parent;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-.aboutus-oulist {
-  height: 50px;
-  width: 300px;
-  margin-top: 100px;
-  padding-top: 40px;
-
-}
-
-.col1 img{
-  height: 400px;
-  width: 600px;
-  margin-top: 100px;
-  padding-top: 40px;
-  
-}
-.col2 img{ 
-  height: 400px;
-  width: 550px;
-  padding-top: 70px;
-  padding-right: 20px;
-} 
-
-.aboutus-skill{
-  margin:50px;
-
-}
-
 .aboutusskill-title{
-  margin: 10px;
-  border: 2px solid black;
-
-
+  border:solid 2px #000;
+  text-align:justify;
 }
 
-.aboutusskill-title h4{
-  
-  text-transform: uppercase;
-  margin: 20PX;
- 
-}
-
-.aboutusskill-title ul{
-  width: 450;
-  margin: 30px;
-}
-
-.aboutus-certification{
-  height: 100px;
-  width: 200px;
-  padding:40px;
-  font-size: 25px;
-
-}
 .main-div2{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-
-}
-
-.col3 h4,.col4 h4,.col5 h4
-{
-   text-align: center;
-   padding-top: 20px;
-   text-transform:capitalize;
-   font-size: 20px;
-   font-family:'Courier New', Courier, monospace;
-}
-
-.col3 img,.col4 img,.col5 img
-{
-   margin-top: 30px;   
-    border: 20px solid rgb(107, 49, 49);
-}
-
-.main-div3{
-  display: flex;
   flex-wrap: wrap;
-  justify-content:flex-start ;
-
-  
 }
 
-.col6, .col7
-{
-
-  height: 30px;
-  width: 80px;
+.main-div2 .col3, .col4, .col5{
+  margin: 5px;
 }
 
-
-
-.fsubmit{
-  border-style:hidden;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: rgb(21, 88, 214);
-  margin-top: 60px;
-  margin-left: 20px;
-  height: 30px;
-  width: 80px;
+.col3 h4, .col4 h4, .col5 h4{
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.fbutton{
-  color: rgb(229, 231, 236);
+.main-div2 img{
+  display: block;
+  border: solid 20px rgb(82, 12, 12);
 }
 
-.tsubmit{
-  border-style:hidden;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: rgb(232, 235, 241);
-  border-top: rgb(16, 94, 94);
-  border-top: 5px solid aqua;
-  margin-top: 55px;
-  margin-left: 40px;
-  height: 40px;
-  width: 90px;
+@media screen and (max-width: 768px) {
+  .main-div{
+  flex-direction:column;
+  }
+  .col1{
+    max-width: 80%;
+  }
 }
-
-.main-div4{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 110px;
-  background-color: rgb(215, 241, 243);
-  font-family: sans-serif;
-  font-weight: lighter;;
-}
-
 /*servicess*/
 
 .placement-courses-main1{
@@ -1022,8 +871,9 @@ ul {
 }
 
 .palcement-content1{
-  font-size: 33px;
+  font-size: 28px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:left;
   /*margin-right: 70px;
   margin-left: 20PX;*/
   
@@ -1048,6 +898,7 @@ ul {
  /* padding: 10px;
   margin-right:30px ;*/
   color: #666;
+  
   
 }
 
@@ -1097,6 +948,7 @@ ul {
 .training-content2 p,.training-content3 p{
   font-size: 20px;
   color: #666;
+  
 }
 
 .training-col2{
@@ -1117,5 +969,224 @@ ul {
   margin-top: 60px;
   color: #f2f2f2;
 }
+/*signup*/
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+ /*background:#f7f8f8;*/
+}
+
+.form-box{
+  max-width:550px;
+  width: 100%;
+  background: #387891;
+  padding: 25px 30px;
+  border-radius: 5px;
+  height: auto;
+  
+}
+.title{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:#fff
+
+}
+
+.user-details{
+  display: flex;
+  flex-wrap: wrap; 
+ justify-content: space-between;
+ /* margin: 20px 0 12px 0;*/
+  
+}
+
+.input-box{
+  margin-bottom: 15px;
+  width: calc(100%/2-20px);
+ 
+  
+}
+.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color:#c9c6c6;
+}
+.input-box input{
+  height: 30px;
+  width:100%;
+  padding: 20px;
+  outline: none;
+  border:none;
+  margin: 3px;
+  border-radius: 5px;
+  background-color:#fff;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.btn{
+  margin-block: 10px;
+  height: 35px;
+  width: 50%;
+  justify-content: space-around;
+  margin-left: 100px;
+  border: none;
+  outline:none;
+  border-radius: 30px;
+  background-color: #0ba818bd;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family:sans-serif;
+  font-weight: bold;
+  cursor:pointer;
+  transition: .4s;
+  color:#fff;
+}
+
+.btn:hover{
+  background-color: #666;
+}
+
+.chkbox{
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px;
+  color:#fff ;
+     
+}
+
+.chkbox input{
+  color: #cc3852;
+   
+}
+.input-box Select{
+  height: 30px;
+  width:100%;
+  padding: 15px;
+  outline: none;
+  border:none;
+  margin: 3px;
+  border-radius: 5px;
+  background-color:#fff;
+  padding-left: 15px;
+  font-size: 15px;
+
+}
+
+.chk-input{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+}
+
+.course-user-register-input{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  background-color: #f1f1f1;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.course-user-register-input:hover{
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  background-color: #fff;
+}
+.course-user-register-input::placeholder {
+  color: #999;
+}
+
+
+/* Logout Button CSS */
+
+
+
+/* CSS */
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+.SignupPage{
+
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  gap: 5rem;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.StudentSection{
+
+  /* background-color: blueviolet; */
+  padding: 3rem;
+}
+.TeacherSection{
+  /* background-color: #186f83; */
+  padding: 3rem;
+}
+.logout-panel{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.StudentSection:hover{
+scale: 1.02;
+transition: ease-in-out 200ms;
+
+}
+.TeacherSection:hover{
+  scale: 1.02;
+  transition: ease-in-out 200ms;
+}
 
