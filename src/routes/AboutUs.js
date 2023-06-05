@@ -93,17 +93,17 @@ const AboutUs = () => {
     </div>
 <div className="main-div2">
         <div className="col3">
-          <img  height="300" width="400" src="https://codenovas.com/wp-content/uploads/2018/07/certificate-2-480x380.png" alt="g-certificate"/><br></br>
+          <img  height="300" width="400" src="https://kolkatadigitalmarketinginstitute.com/wp-content/uploads/2019/11/Digital-Unlocked-Certification.jpg" alt="g-certificate"/><br></br>
            
           <h4 >Google Certified</h4>       
         </div>
         <div className="col4">
-          <img height="300" width="400" src="https://codenovas.com/wp-content/uploads/2018/07/certificate-2-480x380.png" alt="m-certificate"/><br></br>
+          <img height="300" width="400" src="https://i1.rgstatic.net/publication/325513987_Certificate_of_Achievement_Microsoft_Excel_for_the_Data_Analyst_Microsoft_United_States/links/5b11989b0f7e9b498102d97a/largepreview.png" alt="m-certificate"/><br></br>
           
           <h4>Microsoft Certified</h4>
         </div>    
         <div className="col5">
-          <img height="300" width="400" src="https://codenovas.com/wp-content/uploads/2018/07/certificate-2-480x380.png" alt="a-certificate"/><br></br>
+          <img height="300" width="400" src="https://discussions.apple.com/content/attachment/117412040" alt="a-certificate"/><br></br>
           <h4>Apple Certified</h4>
           </div>
 </div>
