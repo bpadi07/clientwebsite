@@ -1,4 +1,5 @@
 import Navbar from './Navbar';
+import logoImage from '../img/blob.png'
 // ...
 import { Link } from 'react-router-dom';
 
@@ -7,7 +8,7 @@ const Header = () => {
     <header>
       <div className="nav-area">
         <Link to="/" className="logo">
-          <img src="https://codenovas.com/wp-content/uploads/2022/04/logo512-1.png" alt="logo"/>
+          <img src={logoImage} width="180px" height="400px"  alt="logo"/>
         </Link>
         <Navbar />
       </div>

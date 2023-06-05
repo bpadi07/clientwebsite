@@ -293,6 +293,7 @@ button span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 100px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -808,10 +809,12 @@ padding: 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  object-fit: fill ;
 }
 
 .main-div2 .col3, .col4, .col5{
   margin: 5px;
+  object-fit: fill ;
 }
 
 .col3 h4, .col4 h4, .col5 h4{
