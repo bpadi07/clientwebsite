@@ -1,9 +1,17 @@
 import React from "react";
+import courseData from '../../coursedata';
+import {useParams} from 'react-router-dom';
+
 const CurriculumTab = () => {
+
+  const {courseId} = useParams();
+  const thisCourse = courseData.find(cour => cour.id === courseId);
+
   return (
     <div className="course-curriculam-tab">
-      <p>CurriculumTab Tab!!</p>
-      {/* First tab content will go here */}
+
+      <p>{thisCourse.curiculam}</p>
+      
     </div>
   );
 };

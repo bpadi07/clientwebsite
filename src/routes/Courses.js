@@ -1,11 +1,11 @@
 import { Link} from 'react-router-dom';
 import React from 'react';
-import Coursedata from '../coursedata';
+import courseData from '../coursedata';
 
 
 const courses = () => {
 
-  const isLoggedIn = window.localStorage.getItem("isSignup");
+ const isLoggedIn = window.localStorage.getItem("isSignup");
   return (
     <>
       <div className="courseMain">
@@ -14,18 +14,18 @@ const courses = () => {
         </div>
         <div className="courseContent">
           {
-          Coursedata.map(course =>{
+          courseData.map(course =>{
             return(
               <div className="courseList">
              <div className="courseThumbnail" key={course.id}>
              <img src={course.thumbnail} alt="" />
              
              { isLoggedIn ?  
-             <Link to={course.url} className="coursePreviewButton">
+             <Link to={`/CourseDetails/${course.id}`} className="coursePreviewButton">
                 PREVIEW THIS COURSE
               </Link> 
               : 
-              <Link to="/login" className="coursePreviewButton">
+              <Link to='/login' className="coursePreviewButton">
                 Login
               </Link>
               }
@@ -34,7 +34,7 @@ const courses = () => {
               </div>
               <div className="courseDescription">
               <p>{course.brand}</p>
-              <Link to={course.url}><h3>{course.title}</h3></Link>
+              <h3>{course.title}</h3>
               <p>{course.short_dec}</p>
               <h3>{course.subscription_type}</h3>
               </div>

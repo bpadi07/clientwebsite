@@ -5,9 +5,9 @@ const Services = () => {
     <>
       <h2>Services page</h2>
 
-      <Link to="/web-design">Web design</Link>
-      <Link to="/seo">Seo</Link>
-      <Link to="/courses">courses</Link>
+      <Link to="/IT-training">IT-training</Link>
+      <Link to="/IT-Consulting">IT-Consulting</Link>
+      <Link to="/IT-Placement">IT-Placement</Link>
     </>
   );
 };

@@ -113,31 +113,7 @@ function StudSignup() {
                   I agree with storage and handling of my data by this website.
                 </lable>
               </div> 
-              <div className="chkbox"> 
-                <lable>
-                  <input type="checkbox" onClick={()=>setShow(!show)}/>
-                   Register as Instructor
-                </lable> 
-                <div className="chk-input">
-                <div className="input-box">
-                 { 
-                 show?<span className="details">Degree</span>:null
-                 }
-                  {
-                   show? <input type="text" name="Degree" placeholder="Degree"/>:null
-                  }
-                </div> 
-                <div className="input-box">
-                  {
-                  show?<span className="details">Expertise</span>:null
-                  }
-                  {
-                  show?<input type="text" name="Expertise" placeholder="Expertise"/>:null
-                  }
-                </div> 
-                </div>
-  
-              </div>
+             
                 <div>
                   <button className="btn" onClick={handleSubmission} disabled={submitButtonDisabled}>Registration</button>   
                 </div>

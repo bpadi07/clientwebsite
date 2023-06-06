@@ -8,10 +8,16 @@ import { collection, addDoc,  } from 'firebase/firestore';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { query, where, getDocs } from "firebase/firestore";
+import courseData from '../coursedata';
+import { useParams }  from 'react-router-dom';
+
 
 const CourseDetails = () => {
 
- 
+    const { courseId } = useParams();
+    
+    const thisCourse = courseData.find(cour => cour.id === courseId)
+     
 
 //     const refUserInformation = database.ref('UserInformation/')
 // const currentUserQuery = refUserInformation.orderByChild('user_id').equalTo(user.uid);
@@ -138,11 +144,12 @@ const registerUser = async () => {
     
 }
 
+    
 
     return (
         <div className="course-deatails-container">
             <div className="course-deatails-col1">
-                <h1>SharePoint (PowerApps)</h1>
+                <h1>{thisCourse.title}</h1>
                 <div className="course-tags">
                     <div className="course-tag-elements">
                         <p>Teacher</p>
