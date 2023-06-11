@@ -31,15 +31,18 @@ const CourseDetails = () => {
     // const [newGmail, setGmail] = useState("");
     // const [isReg, setIsReg] = useState(true);
    
-const cource_name = 'SharePoint';
+const cource_name = thisCourse.title;
 
 const username = window.localStorage.getItem("username");
 const mail = window.localStorage.getItem("user");
 
 
 const usersCollection = new collection(db,"course-enrol-user");
-const q = query(usersCollection, where("Mail", "==", mail));
-
+const q = query(
+    usersCollection,
+    where("course", "==", cource_name),
+    where("Mail", "==", mail)
+  );
 
 // const searchQuery = { Mail: mail };
 // const searchResults = usersCollection.find({ Mail: mail });

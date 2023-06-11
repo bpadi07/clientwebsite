@@ -20,6 +20,8 @@ const Login = () => {
     setIsSignup(!isSignup)
     window.localStorage.setItem('isSignup',false);
     window.localStorage.removeItem('isSignup');
+    window.localStorage.removeItem('user');
+    window.localStorage.removeItem('username');
 
 }
 //Code 
