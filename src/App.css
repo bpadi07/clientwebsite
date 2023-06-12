@@ -132,11 +132,12 @@ button span {
 
 /* content */
 
-.content {
+/* .content {
   /* max-width: 1200px; */
   /* margin: 0 auto; */
-  /* padding: 3rem 20px; */
+  /* padding: 3rem 20px; 
 }
+ */
 
 .content h2 {
   margin-bottom: 1rem;
@@ -984,10 +985,24 @@ padding: 50px;
   
 }
 
-.training-col2{
-  width: 600px;
+.training-col2 {
+  margin: 20px;
+  padding: 2rem;
+  display: inline-block;
 }
 
+.training-img {
+  width: 780px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px transparent;
+  transition: box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+
+.training-img:hover {
+  box-shadow: 0 0 0 2px rgb(8 110 114), 0 0 20px 10px rgba(102, 204, 255, 0.6);
+}
 .consulting-main1{
   height: 150px;
   display: flex;
@@ -1000,7 +1015,7 @@ padding: 50px;
 .consulting-title
 {
   margin-top: 60px;
-  color: #f2f2f2;
+  color: rgb(8 110 114);
 }
 /*signup*/
 
