@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react'; 
 import { db } from '../firebase';
-import { collection, query, where, getDocs, onSnapshot } from "firebase/firestore";
+import { collection, query, where, onSnapshot } from "firebase/firestore";
 import courseData from '../coursedata';
 import { useParams }  from 'react-router-dom';
 const CourseProperties = () => {

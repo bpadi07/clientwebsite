@@ -18,7 +18,7 @@ const courses = () => {
             return(
               <div className="courseList">
              <div className="courseThumbnail" key={course.id}>
-             <img src={course.thumbnail} alt="" />
+             <img height="auto" width="auto" src={course.thumbnail} alt="Error" />
              
              { isLoggedIn ?  
              <Link to={`/CourseDetails/${course.id}`} className="coursePreviewButton">

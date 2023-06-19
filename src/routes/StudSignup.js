@@ -51,7 +51,7 @@ function StudSignup() {
   
       ]
   
-      const [show,setShow]=useState(false)
+      // const [show,setShow]=useState(false)?S
   
       return (
       <>

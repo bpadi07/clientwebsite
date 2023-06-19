@@ -1,8 +1,8 @@
 import { initializeApp } from "firebase/app";
-import { Link, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
 import { GoogleAuthProvider, getAuth, signInWithPopup,getAdditionalUserInfo } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-import firebase from 'firebase/app';
+// import firebase from 'firebase/app';
 
 const firebaseConfig = {
   

@@ -1,12 +1,10 @@
 
 import Google from "../img/btn_google_img.png";
-import Facebook from "../img/facebook.png";
-import Github from "../img/github.png";
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
-import {SignInWithGoogle,user_name, user_mail, user_photo} from "../firebase.js"
+import {SignInWithGoogle,user_name, user_mail} from "../firebase.js"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -14,7 +12,7 @@ const Login = () => {
 
 
   const [isSignup, setIsSignup] = useState(false)
-  const [items, setItems] = useState([])
+  // const [items, setItems] = useState([])
  
   const logout = () => {
     setIsSignup(!isSignup)
@@ -25,7 +23,7 @@ const Login = () => {
 
 }
 //Code 
-const navigate = useNavigate();
+// const navigate = useNavigate();
 const [values, setValues] = useState({
   email: "",
   pass: "",
@@ -57,7 +55,7 @@ const handleSubmission = () => {
     .then(async (res) => {
       setIsSignup(!isSignup)
       window.localStorage.setItem('isSignup',true);
-      if (values.email == "")
+      if (values.email === "")
       {
         window.localStorage.setItem('username',user_name);
         window.localStorage.setItem('user',user_mail);
@@ -180,7 +178,7 @@ const handleSubmission = () => {
         <div className="logout-panel">
         <h1>Welcome <br/>{username}</h1>
         <h2>{user}{}</h2>
-        <button className="button-24" role="button" onClick={logout}> Logout</button>
+        <button className="button-24" onClick={logout}> Logout</button>
         </div>
         </>) }
         
