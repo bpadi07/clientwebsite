@@ -14,6 +14,30 @@ header {
   color: #212529;
   height: 58px;
 }
+/* AboutUs.css */
+.about-us-container {
+  margin: 20px; /* Adds margin around the container */
+}
+
+.feature-list {
+  padding-left: 20px; /* Adds left padding to the feature list */
+}
+
+.user-list {
+  padding-left: 20px; /* Adds left padding to the user list */
+}
+
+.main-div23 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adds margin on top of the certifications section */
+}
+
+.column3,
+.column4,
+.column5 {
+  padding: 10px; /* Adds padding to the certification columns */
+}
 
 .nav-area {
   display: flex;

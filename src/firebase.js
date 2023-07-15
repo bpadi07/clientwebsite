@@ -39,7 +39,7 @@ const auth = getAuth();
 
 
 
-var Details;;
+var Details;
 var user_name;
 var user_mail;
 var user_photo;
